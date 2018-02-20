@@ -2,8 +2,16 @@
 <?xml-stylesheet type="text/xsl" href="style.xsl"?>
 <portfolio 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
-    <first-name>Maros</first-name>
-    <last-name>Betko</last-name>
+    <name>Maroš Beťko</name>
+    <email>betkomaros@gmail.com</email>
+    <headline>
+        <en>iOS App Developer at Master Internet</en>
+        <sk>iOS vývojár pre Master Internet</sk>
+    </headline>
+    <summary>
+        <en>I'm studying Informatics and Design on Masaryk University in Brno. Currently looking for any freelance work connected to C++ or game development. Game development is one of my biggest passions. In my free time I try to develop my skills in this field, ranging from coding to art development. I have an ongoing game project that I like to develop and expand, and try new ideas on. I like challenges that require creative thinking and solving them inspires and motivates me. I'm thorough and organized and hate shoddy quality work and that is what I want my work to reflect.</en>
+        <sk>Študujem informatiku a grafický dizajn na Masarykoevj Univeryite v Brne. Medzi moje záľuby patrí herný dizaj a rád sa tomuto koníčku venujem vo svojom voľnom čase. Do budúcnosti je mojim cieľom uplatniť sa v hernom priemysle, buď ako programátor vo veľkom štúdiu alebo aj ako nezávislý vývojár. Mám rád výzvy, ktoré vyžadújú kreatívne myslenie a riešenie takýchto úloh ma motivuje. Som dôkladný a organizovaný a nemám rád odfláknutú prácu, a to je presne čo chcem aby moja práca ukazovala.</sk>
+    </summary>
     <section type="experience">
         <experience name="iOSDeveloper">
             <title>
@@ -30,7 +38,7 @@
             </title>
             <company logo="img/logo/muni.png">
                 <en>Masaryk University Brno</en>
-                <sk>Msarykova Univerzita Brno</sk>
+                <sk>Masarykova Univerzita Brno</sk>
             </company>
             <location>
                 <en>District Brno-City, Czech Republic</en>
@@ -61,5 +69,30 @@
                 <sk>Príprava obrázkov a elektronických aj tlačených dokumentov na preklad z angličtiny do ostatných jazykov. Finalizácia a opravovanie chýb v preložených dokumentoch.</sk>
             </description>
         </experience>
+    </section>
+    <section type="education">
+        <education name="bMuni">
+            <school logo="img/logo/muni.png">
+                <en>Masaryk University Brno</en>
+                <sk>Masarykova Univerzita Brno</sk>
+            </school>
+            <field>
+                <en>Applied Informatics and Graphic Design</en>
+                <sk>Aplikovaná informatika a grafický design</sk>
+            </field>
+            <start>2015</start>
+        </education>
+        <education name="gjgt">
+            <school logo="img/logo/gjgt.png">
+                <en>Gymnasium of Jozef Gregor Tajovský, Banská Bystrica</en>
+                <sk>Gymnázium Jozefa Gregora Tajovského, Banská Bystrica</sk>
+            </school>
+            <field>
+                <en>Mathematics</en>
+                <sk>Matematika</sk>
+            </field>
+            <start>2011</start>
+            <end>2015</end>
+        </education>
     </section>
 </portfolio>

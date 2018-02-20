@@ -9,33 +9,25 @@
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <!-- Custom groups -->
-    <xsd:group name="basic-info-group">
-        <xsd:sequence>
-            <xsd:element name="first-name" type="xsd:string"/>
-            <xsd:element name="middle-name" type="xsd:string" minOccurs="0"/>
-            <xsd:element name="last-name" type="xsd:string"/>
-            <xsd:element name="brief" type="xsd:string" minOccurs="0"/>
-        </xsd:sequence>
-    </xsd:group>
-    <!-- Custom complex types -->
+    <!-- Section -->
     <xsd:complexType name="section-type">
         <xsd:choice>
             <xsd:sequence>
-                <xsd:element name="experience" type="experience-type" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="experience" type="experience-type" maxOccurs="unbounded"/>
             </xsd:sequence>
             <xsd:sequence>
-                <xsd:element name="education" type="education-type" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="education" type="education-type" maxOccurs="unbounded"/>
             </xsd:sequence>
             <xsd:sequence>
-                <xsd:element name="skill" type="skills-type" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="skill" type="skills-type" maxOccurs="unbounded"/>
             </xsd:sequence>
             <xsd:sequence>
-                <xsd:element name="project" type="project-type" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element name="project" type="project-type" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:choice>
         <xsd:attribute name="type" type="section-name-type"/>
     </xsd:complexType>
+    <!-- Section types -->
     <xsd:complexType name="experience-type">
         <xsd:sequence>
             <xsd:element name="title" type="localized-string-type"/>
@@ -43,13 +35,27 @@
             <xsd:element name="location" type="localized-string-type"/>
             <xsd:element name="start" type="xsd:gYearMonth"/>
             <xsd:element name="end" type="xsd:gYearMonth" minOccurs="0"/>
-            <xsd:element name="description" type="localized-string-type"/>
+            <xsd:element name="description" type="localized-string-type" minOccurs="0"/>
         </xsd:sequence>
         <xsd:attribute name="name" type="xsd:string" use="required"/>
     </xsd:complexType>
-    <xsd:complexType name="education-type"></xsd:complexType>
+    <!---->
+    <xsd:complexType name="education-type">
+        <xsd:sequence>
+            <xsd:element name="school" type="company-type"/>
+            <xsd:element name="field" type="localized-string-type"/>
+            <xsd:element name="start" type="xsd:gYear"/>
+            <xsd:element name="end" type="xsd:gYear" minOccurs="0"/>
+            <xsd:element name="degree" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="description" type="localized-string-type" minOccurs="0"/>
+        </xsd:sequence>
+        <xsd:attribute name="name" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    <!---->
     <xsd:complexType name="skills-type"></xsd:complexType>
+    <!---->
     <xsd:complexType name="project-type"></xsd:complexType>
+    <!-- Other helper types -->
     <xsd:complexType name="company-type">
         <xsd:complexContent>
             <xsd:extension base="localized-string-type">
@@ -57,13 +63,22 @@
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
-    <!-- Localized string -->
+    <!---->
     <xsd:complexType name="localized-string-type">
         <xsd:sequence>
-            <xsd:element name="en"/>
+            <xsd:element name="en" minOccurs="0"/>
             <xsd:element name="sk" minOccurs="0"/>
         </xsd:sequence>
     </xsd:complexType>
+    <!-- Custom groups -->
+    <xsd:group name="basic-info-group">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="email" type="email-address-type"/>
+            <xsd:element name="headline" type="localized-string-type" minOccurs="0"/>
+            <xsd:element name="summary" type="localized-string-type"/>
+        </xsd:sequence>
+    </xsd:group>
     <!-- Enums -->
     <xsd:simpleType name="section-name-type">
         <xsd:restriction base="xsd:string">
@@ -71,6 +86,12 @@
             <xsd:enumeration value="education"/>
             <xsd:enumeration value="skills"/>
             <xsd:enumeration value="projects"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <!-- String regexes -->
+    <xsd:simpleType name="email-address-type">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[^@]+@[^\.]+\.\w+"/>
         </xsd:restriction>
     </xsd:simpleType>
 </xsd:schema>
