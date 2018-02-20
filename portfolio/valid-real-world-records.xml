@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<portfolio 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    <first-name>Maros</first-name>
+    <last-name>Betko</last-name>
+    <section type="experience">
+        <experience name="iOSDeveloper">
+            <title>
+                <en>iOS App Developer</en>
+                <sk>Vývojár aplikácií pre systém iOS</sk>
+            </title>
+            <company logo="img/logo/master.png">
+                <en>Master Internet</en>
+            </company>
+            <location>
+                <en>District Brno-City, Czech Republic</en>
+                <sk>Okres Brno-město, Česká republika</sk>
+            </location>
+            <start>2017-05</start>
+            <description>
+                <en>Programming and designing new apps for iOS in Swift and Objective-C language.</en>
+                <sk>Programovanie s dizajnovanie nových aplikácií pre iOS v jazykoch Swift a Objective-C.</sk>
+            </description>
+        </experience>
+        <experience name="teachingAssistant">
+            <title>
+                <en>Undergraduate Teaching Assistant</en>
+                <sk>Vysokoškolský asistent učiteľa</sk>
+            </title>
+            <company logo="img/logo/muni.png">
+                <en>Masaryk University Brno</en>
+                <sk>Msarykova Univerzita Brno</sk>
+            </company>
+            <location>
+                <en>District Brno-City, Czech Republic</en>
+                <sk>Okres Brno-město, Česká republika</sk>
+            </location>
+            <start>2017-06</start>
+            <description>
+                <en>I assist on course PB161 C++ Programming and PV112 Computer Graphics API in preparation of programming assignments, help students during seminars, answer their questions and score and give feedback on major course assignments.</en>
+                <sk>Pomoc pri výučbe kurzov PB161 Úvod do programovania v jazyku C++ a PV112 Grafická rozhraní. Podielanie sa na príprave úloh pre študentov, pomoc študentom na cvičeniach a code review veľkých domácich úloh.</sk>
+            </description>
+        </experience>
+        <experience name="dtpSpecialist">
+            <title>
+                <en>DTP Specialist</en>
+                <sk>DTP Špecialista</sk>
+            </title>
+            <company logo="img/logo/moravia.png">
+                <en>Moravia</en>
+            </company>
+            <location>
+                <en>District Brno-City, Czech Republic</en>
+                <sk>Okres Brno-město, Česká republika</sk>
+            </location>
+            <start>2015-10</start>
+            <end>2017-05</end>
+            <description>
+                <en>Preparing images, documents or presentations for translations to multiple languages. Fixing and finalizing complete translated materials.</en>
+                <sk>Príprava obrázkov a elektronických aj tlačených dokumentov na preklad z angličtiny do ostatných jazykov. Finalizácia a opravovanie chýb v preložených dokumentoch.</sk>
+            </description>
+        </experience>
+    </section>
+</portfolio>
