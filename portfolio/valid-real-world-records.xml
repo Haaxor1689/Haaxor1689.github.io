@@ -12,6 +12,14 @@
         <en>I'm studying Informatics and Design on Masaryk University in Brno. Currently looking for any freelance work connected to C++ or game development. Game development is one of my biggest passions. In my free time I try to develop my skills in this field, ranging from coding to art development. I have an ongoing game project that I like to develop and expand, and try new ideas on. I like challenges that require creative thinking and solving them inspires and motivates me. I'm thorough and organized and hate shoddy quality work and that is what I want my work to reflect.</en>
         <sk>Študujem informatiku a grafický dizajn na Masarykoevj Univeryite v Brne. Medzi moje záľuby patrí herný dizaj a rád sa tomuto koníčku venujem vo svojom voľnom čase. Do budúcnosti je mojim cieľom uplatniť sa v hernom priemysle, buď ako programátor vo veľkom štúdiu alebo aj ako nezávislý vývojár. Mám rád výzvy, ktoré vyžadújú kreatívne myslenie a riešenie takýchto úloh ma motivuje. Som dôkladný a organizovaný a nemám rád odfláknutú prácu, a to je presne čo chcem aby moja práca ukazovala.</sk>
     </summary>
+    <social>
+        <linkedin>betkomaros</linkedin>
+        <twitter>Haaxor1689</twitter>
+        <stackoverflow>7216259</stackoverflow>
+        <github>Haaxor1689</github>
+        <pinterest>betkomaros</pinterest>
+        <link name="Portfolio" url="https://haaxor1689.github.io/"/>
+    </social>
     <section type="experience">
         <experience name="iOSDeveloper">
             <title>
@@ -69,6 +77,27 @@
                 <sk>Príprava obrázkov a elektronických aj tlačených dokumentov na preklad z angličtiny do ostatných jazykov. Finalizácia a opravovanie chýb v preložených dokumentoch.</sk>
             </description>
         </experience>
+        <experience name="swTester">
+            <title>
+                <en>Software Tester</en>
+                <sk>Softvérový tester</sk>
+            </title>
+            <company logo="img/logo/ceitec.png">
+                <en>CEITEC - Central European Institute of Technology</en>
+            </company>
+            <location>
+                <en>District Brno-City, Czech Republic</en>
+                <sk>Okres Brno-město, Česká republika</sk>
+            </location>
+            <start>2015-12</start>
+            <end>2015-02</end>
+            <description>
+                <text lang="en"></text>
+                <text lang="sk"></text>
+                <en>Closed beta testing of application for renting of various science equipment and labs.</en>
+                <sk>Testovanie informačného systému pre prenajímanie laboratórií a prístrojov poskytovaných spoločnosťou CEITEC.</sk>
+            </description>
+        </experience>
     </section>
     <section type="education">
         <education name="bMuni">
@@ -94,5 +123,45 @@
             <start>2011</start>
             <end>2015</end>
         </education>
+    </section>
+    <section type="skills">
+        <skill>C++</skill>
+        <skill>Swift</skill>
+        <skill>C#</skill>
+        <skill>Unity</skill>
+        <skill>Lua</skill>
+        <skill>OpenGL</skill>
+        <skill>Adobe Photoshop</skill>
+        <skill>Adobe Illustrator</skill>
+        <skill>Adobe InDesign</skill>
+        <skill>Objective-C</skill>
+    </section>
+    <section type="projects">
+        <project name="tetris">
+            <name>Tetris</name>
+            <start>2017-01</start>
+            <end>2017-08</end>
+            <role>
+                <en>Designer, Programmer and Artist</en>
+            </role>
+            <description>
+                <en>A Tetris game, written in custom built engine with the use of C++ and SDL2 library.</en>
+            </description>
+            <link name="Itch page" url="https://haaxor.itch.io/tetris"/>
+            <link name="Source on Github" url="https://github.com/Haaxor1689/Tetris"/>
+        </project>
+        <project name="tetris">
+            <name>Your Evilness</name>
+            <type>Prototype</type>
+            <start>2016-07</start>
+            <end>2016-10</end>
+            <role>
+                <en>Designer, Programmer and Artist</en>
+            </role>
+            <description>
+                <en>Small passion project of mine, that I worked on to try out game design and programming.</en>
+            </description>
+            <link name="Steam Workshop link" url="http://steamcommunity.com/sharedfiles/filedetails/?id=691919823"/>
+        </project>
     </section>
 </portfolio>
