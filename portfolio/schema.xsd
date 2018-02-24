@@ -5,6 +5,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:group ref="basic-info-group"/>
+                <xsd:element name="social" type="social-info-type"/>
                 <xsd:element name="section" type="section-type" minOccurs="0" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
@@ -19,7 +20,7 @@
                 <xsd:element name="education" type="education-type" maxOccurs="unbounded"/>
             </xsd:sequence>
             <xsd:sequence>
-                <xsd:element name="skill" type="skills-type" maxOccurs="unbounded"/>
+                <xsd:element name="skill" type="xsd:string" maxOccurs="unbounded"/>
             </xsd:sequence>
             <xsd:sequence>
                 <xsd:element name="project" type="project-type" maxOccurs="unbounded"/>
@@ -52,9 +53,18 @@
         <xsd:attribute name="name" type="xsd:string" use="required"/>
     </xsd:complexType>
     <!---->
-    <xsd:complexType name="skills-type"></xsd:complexType>
-    <!---->
-    <xsd:complexType name="project-type"></xsd:complexType>
+    <xsd:complexType name="project-type">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="type" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="start" type="xsd:gYearMonth"/>
+            <xsd:element name="end" type="xsd:gYearMonth" minOccurs="0"/>
+            <xsd:element name="role" type="localized-string-type"/>
+            <xsd:element name="description" type="localized-string-type"/>
+            <xsd:element name="link" type="link-type" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+        <xsd:attribute name="name" type="xsd:string" use="required"/>
+    </xsd:complexType>
     <!-- Other helper types -->
     <xsd:complexType name="company-type">
         <xsd:complexContent>
@@ -64,12 +74,48 @@
         </xsd:complexContent>
     </xsd:complexType>
     <!---->
-    <xsd:complexType name="localized-string-type">
+    <xsd:complexType name="social-info-type">
         <xsd:sequence>
-            <xsd:element name="en" minOccurs="0"/>
-            <xsd:element name="sk" minOccurs="0"/>
+            <xsd:element name="linkedin" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="twitter" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="stackoverflow" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="github" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="pinterest" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="link" type="link-type" minOccurs="0" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>
+    <!---->
+    <xsd:complexType name="link-type">
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="url" type="xsd:string" use="required"/>
+        <xsd:attribute name="logo" type="xsd:string"/>
+    </xsd:complexType>
+    <!---->
+    <xsd:complexType name="localized-string-type">
+        <xsd:sequence>
+            <xsd:element name="text" type="text-type" maxOccurs="unbounded"/>
+            <!-- <xsd:element name="en" minOccurs="0"/><xsd:element name="sk" minOccurs="0"/> -->
+        </xsd:sequence>
+        <xsd:unique>
+            <xsd:selector xpath="./text"/>
+            <xs:field xpath="@lang"/>
+        </xsd:unique>
+    </xsd:complexType>
+    <!---->
+    <xsd:complexType name="text-type">
+        <xsd:complexContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="lang" type="language-type"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <!---->
+    <xsd:simpleType name="language-type">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="en"/>
+            <xsd:enumeration value="sk"/>
+        </xsd:restriction>
+    </xsd:simpleType>
     <!-- Custom groups -->
     <xsd:group name="basic-info-group">
         <xsd:sequence>
