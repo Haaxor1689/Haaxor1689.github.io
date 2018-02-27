@@ -39,7 +39,7 @@
                 <text lang="sk">Programovanie s dizajnovanie nových aplikácií pre iOS v jazykoch Swift a Objective-C.</text>
             </description>
         </experience>
-        <experience name="teachingAssistant">
+        <experience name="TeachingAssistant">
             <title>
                 <text lang="en">Undergraduate Teaching Assistant</text>
                 <text lang="sk">Vysokoškolský asistent učiteľa</text>
@@ -58,7 +58,7 @@
                 <text lang="sk">Pomoc pri výučbe kurzov PB161 Úvod do programovania v jazyku C++ a PV112 Grafická rozhraní. Podielanie sa na príprave úloh pre študentov, pomoc študentom na cvičeniach a code review veľkých domácich úloh.</text>
             </description>
         </experience>
-        <experience name="dtpSpecialist">
+        <experience name="DtpSpecialist">
             <title>
                 <text lang="en">DTP Specialist</text>
                 <text lang="sk">DTP Špecialista</text>
@@ -77,7 +77,7 @@
                 <text lang="sk">Príprava obrázkov a elektronických aj tlačených dokumentov na preklad z angličtiny do ostatných jazykov. Finalizácia a opravovanie chýb v preložených dokumentoch.</text>
             </description>
         </experience>
-        <experience name="swTester">
+        <experience name="SwTester">
             <title>
                 <text lang="en">Software Tester</text>
                 <text lang="sk">Softvérový tester</text>
@@ -98,7 +98,7 @@
         </experience>
     </section>
     <section type="education">
-        <education name="bMuni">
+        <education name="BcMuni">
             <school logo="img/logo/muni.png">
                 <text lang="en">Masaryk University Brno</text>
                 <text lang="sk">Masarykova Univerzita Brno</text>
@@ -109,7 +109,7 @@
             </field>
             <start>2015</start>
         </education>
-        <education name="gjgt">
+        <education name="Gjgt">
             <school logo="img/logo/gjgt.png">
                 <text lang="en">Gymnasium of Jozef Gregor Tajovský, Banská Bystrica</text>
                 <text lang="sk">Gymnázium Jozefa Gregora Tajovského, Banská Bystrica</text>
@@ -135,7 +135,7 @@
         <skill>Objective-C</skill>
     </section>
     <section type="projects">
-        <project name="tetris">
+        <project name="Tetris">
             <name>Tetris</name>
             <start>2017-01</start>
             <end>2017-08</end>
@@ -148,7 +148,7 @@
             <link name="Itch page" url="https://haaxor.itch.io/tetris"/>
             <link name="Source on Github" url="https://github.com/Haaxor1689/Tetris"/>
         </project>
-        <project name="tetris">
+        <project name="YourEvilness">
             <name>Your Evilness</name>
             <type>Prototype</type>
             <start>2016-07</start>
