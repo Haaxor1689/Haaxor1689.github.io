@@ -29,7 +29,7 @@
             </xs:choice>
             <xs:attribute name="type" type="xs:string"/>
         </xs:complexType>
-        <xs:unique name="unique_key">
+        <xs:unique name="unique-key">
             <xs:selector xpath="*"/>
             <xs:field xpath="@name"/>
         </xs:unique>

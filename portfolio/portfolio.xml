@@ -129,10 +129,12 @@
         <skill>Unity</skill>
         <skill>Lua</skill>
         <skill>OpenGL</skill>
+        <skill>XML</skill>
+        <skill>LaTex</skill>
+        <skill>Objective-C</skill>
         <skill>Adobe Photoshop</skill>
         <skill>Adobe Illustrator</skill>
         <skill>Adobe InDesign</skill>
-        <skill>Objective-C</skill>
     </section>
     <section type="projects">
         <project name="Tetris">
