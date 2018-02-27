@@ -123,18 +123,30 @@
         </education>
     </section>
     <section type="skills">
-        <skill>C++</skill>
-        <skill>Swift</skill>
-        <skill>C#</skill>
-        <skill>Unity</skill>
-        <skill>Lua</skill>
-        <skill>OpenGL</skill>
-        <skill>XML</skill>
-        <skill>LaTex</skill>
-        <skill>Objective-C</skill>
-        <skill>Adobe Photoshop</skill>
-        <skill>Adobe Illustrator</skill>
-        <skill>Adobe InDesign</skill>
+        <skill name="Programming">
+            <field>
+                <text lang="en">Programming</text>
+            </field>
+            <description>
+                <text lang="en">My preffered language of choice is C++, which I've spent most time coding in. Other languages I use are Swift and Objective-c as an iOS developer and C# in my Unity projects at school. I have worked with frameworks such as QT, Unity and OpenGL(glad + GLFW).</text>
+            </description>
+        </skill>
+        <skill name="Design">
+            <field>
+                <text lang="en">Graphics Design</text>
+            </field>
+            <description>
+                <text lang="en">During my studies at Masaryk University I attended many design classes where I have worked on small projects in Adobe Photoshop, Illustrator and InDesign. I have also created a complete pixel font, and some pixel art for projects I have worked on in my spare time.</text>
+            </description>
+        </skill>
+        <skill name="Collab">
+            <field>
+                <text lang="en">Versioning and Collaboration</text>
+            </field>
+            <description>
+                <text lang="en">I use Git daily and also have experience with various git workflows I used either in work or group in projects at school.</text>
+            </description>
+        </skill>
     </section>
     <section type="projects">
         <project name="Tetris">
@@ -147,8 +159,8 @@
             <description>
                 <text lang="en">A Tetris game, written in custom built engine with the use of C++ and SDL2 library.</text>
             </description>
-            <link name="Itch page" url="https://haaxor.itch.io/tetris"/>
-            <link name="Source on Github" url="https://github.com/Haaxor1689/Tetris"/>
+            <link url="https://haaxor.itch.io/tetris">Itch page</link>
+            <link url="https://github.com/Haaxor1689/Tetris">Source on Github</link>
         </project>
         <project name="YourEvilness">
             <name>Your Evilness</name>
@@ -161,7 +173,7 @@
             <description>
                 <text lang="en">Small passion project of mine, that I worked on to try out game design and programming.</text>
             </description>
-            <link name="Steam Workshop link" url="http://steamcommunity.com/sharedfiles/filedetails/?id=691919823"/>
+            <link url="http://steamcommunity.com/sharedfiles/filedetails/?id=691919823">Steam Workshop link</link>
         </project>
     </section>
 </portfolio>

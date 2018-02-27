@@ -21,7 +21,7 @@
                     <xs:element name="education" type="education-type" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:sequence>
-                    <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+                    <xs:element name="skill" type="skill-type" maxOccurs="unbounded"/>
                 </xs:sequence>
                 <xs:sequence>
                     <xs:element name="project" type="project-type" maxOccurs="unbounded"/>
@@ -59,6 +59,14 @@
         <xs:attribute name="name" type="xs:string" use="required"/>
     </xs:complexType>
     <!---->
+    <xs:complexType name="skill-type">
+        <xs:sequence>
+            <xs:element name="field" type="localized-string-type"/>
+            <xs:element name="description" type="localized-string-type"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+    <!---->
     <xs:complexType name="project-type">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
@@ -92,9 +100,11 @@
     </xs:complexType>
     <!---->
     <xs:complexType name="link-type">
-        <xs:attribute name="name" type="xs:string"/>
-        <xs:attribute name="url" type="xs:string" use="required"/>
-        <xs:attribute name="logo" type="xs:string"/>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="url" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
     </xs:complexType>
     <!---->
     <xs:complexType name="localized-string-type">
