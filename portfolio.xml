@@ -20,7 +20,7 @@
         <pinterest>betkomaros</pinterest>
         <link url="https://haaxor1689.github.io/">Portfolio</link>
     </social>
-    <section type="experience">
+    <section type="Experience">
         <experience name="iOSDeveloper">
             <title>
                 <text lang="en">iOS App Developer</text>
@@ -97,7 +97,7 @@
             </description>
         </experience>
     </section>
-    <section type="education">
+    <section type="Education">
         <education name="BcMuni">
             <school logo="img/logo/muni.png">
                 <text lang="en">Masaryk University Brno</text>
@@ -122,7 +122,7 @@
             <end>2015</end>
         </education>
     </section>
-    <section type="skills">
+    <section type="Skills">
         <skill name="Programming">
             <field>
                 <text lang="en">Programming</text>
@@ -148,7 +148,7 @@
             </description>
         </skill>
     </section>
-    <section type="projects">
+    <section type="Projects">
         <project name="Tetris">
             <name>Tetris</name>
             <start>2017-01</start>

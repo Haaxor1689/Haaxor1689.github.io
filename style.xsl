@@ -16,11 +16,11 @@
                 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
                     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
                         <i class="fa fa-home w3-xxlarge"></i>
-                        <p>home</p>
+                        <p>Home</p>
                     </a>
                     <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
                         <i class="fa fa-user w3-xxlarge"></i>
-                        <p>about</p>
+                        <p>About</p>
                     </a>
                     <xsl:for-each select="./section">
                         <a href="#{@type}" class="w3-bar-item w3-button w3-padding-large w3-black">
@@ -35,8 +35,8 @@
                 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
                     <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
                         <!-- TODO: Set width of each element according to count of elemts -->
-                        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">home</a>
-                        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">about</a>
+                        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+                        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
                         <xsl:for-each select="./section">
                             <a href="#{@type}" class="w3-bar-item w3-button" style="width:25% !important">
                                 <xsl:value-of select="@type"/>
@@ -49,10 +49,7 @@
                     <!-- Header/Home -->
                     <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
                         <h1 class="w3-jumbo">
-                            <!-- <span class="w3-hide-small">I'm</span> -->
-                            <!-- <xsl:text>&#160;</xsl:text> -->
                             <xsl:value-of select="name"/>
-                            <!-- <xsl:text>.</xsl:text> -->
                         </h1>
                         <p>
                             <xsl:value-of select="headline/text"/>
@@ -66,9 +63,33 @@
                             <xsl:value-of select="summary/text"/>
                         </p>
                     </div>
+                    <!-- Sections -->
+                    <xsl:for-each select="./section">
+                        <div class="w3-padding-64 w3-content w3-text-grey" id="{@type}">
+                            <h2 class="w3-text-light-grey">
+                                <xsl:value-of select="@type"/>
+                            </h2>
+                            <hr style="width:200px" class="w3-opacity"/>
+                            <xsl:for-each select="*">
+                                <xsl:apply-templates select="."/>
+                            </xsl:for-each>
+                        </div>
+                    </xsl:for-each>
                     <!-- END PAGE CONTENT -->
                 </div>
             </body>
         </html>
+    </xsl:template>
+    <xsl:template match="/portfolio/section/experience">
+        <p>Placeholder</p>
+    </xsl:template>
+    <xsl:template match="/portfolio/section/education">
+        <p>Placeholder</p>
+    </xsl:template>
+    <xsl:template match="/portfolio/section/skill">
+        <p>Placeholder</p>
+    </xsl:template>
+    <xsl:template match="/portfolio/section/project">
+        <p>Placeholder</p>
     </xsl:template>
 </xsl:transform>
