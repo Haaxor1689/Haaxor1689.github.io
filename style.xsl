@@ -52,7 +52,7 @@
                             <xsl:value-of select="name"/>
                         </h1>
                         <p>
-                            <xsl:value-of select="headline/text"/>
+                            <xsl:apply-templates select="headline/text"/>
                         </p>
                     </header>
                     <!-- About Section -->
@@ -60,7 +60,7 @@
                         <h2 class="w3-text-light-grey">Summary</h2>
                         <hr style="width:200px" class="w3-opacity"/>
                         <p>
-                            <xsl:value-of select="summary/text"/>
+                            <xsl:apply-templates select="summary/text"/>
                         </p>
                     </div>
                     <!-- Sections -->
@@ -70,9 +70,7 @@
                                 <xsl:value-of select="@type"/>
                             </h2>
                             <hr style="width:200px" class="w3-opacity"/>
-                            <xsl:for-each select="*">
-                                <xsl:apply-templates select="."/>
-                            </xsl:for-each>
+                            <xsl:apply-templates select="./*"/>
                         </div>
                     </xsl:for-each>
                     <!-- END PAGE CONTENT -->
@@ -87,9 +85,21 @@
         <p>Placeholder</p>
     </xsl:template>
     <xsl:template match="/portfolio/section/skill">
-        <p>Placeholder</p>
+        <div class="w3-padding-16 indented">
+            <span class="w3-text-light-grey">
+                <xsl:apply-templates select="field/text"/>
+            </span>
+            <xsl:text>&#160;</xsl:text>
+            <xsl:apply-templates select="description/text"/>
+        </div>
     </xsl:template>
     <xsl:template match="/portfolio/section/project">
         <p>Placeholder</p>
+    </xsl:template>
+    <!-- Localized text -->
+    <xsl:template match="//text">
+        <xsl:if test="@lang = 'en'">
+            <xsl:value-of select="."/>
+        </xsl:if>
     </xsl:template>
 </xsl:transform>

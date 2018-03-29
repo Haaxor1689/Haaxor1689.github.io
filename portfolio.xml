@@ -136,7 +136,7 @@
                 <text lang="en">Graphics Design</text>
             </field>
             <description>
-                <text lang="en">During my studies at Masaryk University I attended many design classes where I have worked on small projects in Adobe Photoshop, Illustrator and InDesign. I have also created a complete pixel font, and some pixel art for projects I have worked on in my spare time.</text>
+                <text lang="en">During my studies at Masaryk University I attended many design classes where I have worked on small projects in Adobe Photoshop, Illustrator and InDesign. I have also created a complete pixel font, and pixel art for projects I have worked on in my spare time.</text>
             </description>
         </skill>
         <skill name="Collab">
@@ -144,7 +144,7 @@
                 <text lang="en">Versioning and Collaboration</text>
             </field>
             <description>
-                <text lang="en">I use Git daily and also have experience with various git workflows I used either in work or group in projects at school.</text>
+                <text lang="en">I use Git daily and also have experience with various git workflows I used either in work or in group projects at school.</text>
             </description>
         </skill>
     </section>
