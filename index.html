@@ -3,6 +3,21 @@
 
 <head>
   <script>
+    function getURLParameter(sParam) {
+      var sPageURL = window.location.search.substring(1);
+      var sURLVariables = sPageURL.split('&');
+      for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) {
+          return sParameterName[1];
+        }
+      }
+    }
+
+    function changeLanguage(newLang) {
+      window.location.search = "&lang=" + newLang;
+    }
+
     function loadXMLDoc(filename) {
       if (window.ActiveXObject) {
         xhttp = new ActiveXObject("Msxml2.XMLHTTP");
@@ -17,6 +32,11 @@
     }
 
     function displayResult() {
+      var lang = getURLParameter("lang");
+      if (lang == null) {
+        window.location.search = '&lang=en';
+      }
+
       xml = loadXMLDoc("portfolio.xml");
       xsl = loadXMLDoc("style.xsl");
       // code for IE
@@ -28,6 +48,7 @@
       else if (document.implementation && document.implementation.createDocument) {
         xsltProcessor = new XSLTProcessor();
         xsltProcessor.importStylesheet(xsl);
+        xsltProcessor.setParameter(null, "lang", getURLParameter("lang"));
         resultDocument = xsltProcessor.transformToFragment(xml, document);
         document.getElementById("document").appendChild(resultDocument);
       }

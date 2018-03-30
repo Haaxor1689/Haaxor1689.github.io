@@ -2,6 +2,7 @@
 <xsl:transform version="2.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="html" encoding="UTF-8" indent="yes" doctype-public="-//W3C//DTD HTML 4.01//EN" doctype-system="http://www.w3.org/TR/html4/strict.dtd"/>
+    <xsl:param name="lang" select="(//text/@lang)[1]"/>
     <!-- Root node -->
     <xsl:template match="/portfolio">
         <title>
@@ -13,10 +14,17 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="flags/sprite-flags-24x24.css"/>
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <div class="w3-black">
             <!-- Icon Bar (Sidebar - hidden on small screens) -->
             <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+                <xsl:for-each select="(//text)[1]/../*/@lang">
+                    <a href="#" onclick="changeLanguage('{.}')">
+                        <i class="flag flag-24 flag-{.}"/>
+                    </a>
+                    <xsl:text>&#160;</xsl:text>
+                </xsl:for-each>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
                     <i class="fa fa-home w3-xxlarge"></i>
                     <p>Home</p>
@@ -27,7 +35,6 @@
                 </a>
                 <xsl:for-each select="./section">
                     <a href="#{@type}" class="w3-bar-item w3-button w3-padding-large w3-black">
-                        <!-- <i class="fa fa-home w3-xxlarge"></i> -->
                         <p>
                             <xsl:value-of select="@type"/>
                         </p>
@@ -219,7 +226,32 @@
     </xsl:template>
     <!-- Projects -->
     <xsl:template match="/portfolio/section/project">
-        <p>Placeholder</p>
+        <div class="w3-padding-16">
+            <h3 class="w3-text-light-grey inline">
+                <xsl:value-of select="name"/>
+            </h3>
+            <xsl:if test="type">
+                <xsl:text>&#160;</xsl:text>
+                <xsl:value-of select="type"/>
+            </xsl:if>
+            <p>
+                <xsl:value-of select="start"/>
+                <xsl:text> - </xsl:text>
+                <xsl:choose>
+                    <xsl:when test="end">
+                        <xsl:value-of select="end"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>Present</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </p>
+            <h5 class="w3-text-light-grey inline">Role: </h5>
+            <xsl:apply-templates select="role/text"/>
+            <p>
+                <xsl:apply-templates select="description/text"/>
+            </p>
+        </div>
     </xsl:template>
     <!-- Company -->
     <xsl:template match="//*[self::company or self::school]">
@@ -236,7 +268,7 @@
     </xsl:template>
     <!-- Localized text -->
     <xsl:template match="//text">
-        <xsl:if test="@lang = 'en'">
+        <xsl:if test="@lang = $lang">
             <xsl:value-of select="."/>
         </xsl:if>
     </xsl:template>
