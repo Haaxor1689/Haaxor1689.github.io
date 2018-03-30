@@ -67,15 +67,59 @@
                     </p>
                 </div>
                 <!-- Sections -->
-                <xsl:for-each select="./section">
+                <xsl:for-each select="section">
                     <div class="w3-padding-64 w3-content w3-text-grey" id="{@type}">
                         <h2 class="w3-text-light-grey">
                             <xsl:value-of select="@type"/>
                         </h2>
                         <hr style="width:200px" class="w3-opacity"/>
-                        <xsl:apply-templates select="./*"/>
+                        <xsl:apply-templates select="*"/>
                     </div>
                 </xsl:for-each>
+                <!-- Footer -->
+                <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+                    <xsl:if test="social/linkedin">
+                        <a target="_blank" href="https://www.linkedin.com/in/{social/linkedin}">
+                            <i title="LinkedIn" class="fa fa-linkedin w3-hover-opacity"/>
+                        </a>
+                        <xsl:text>&#160;</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="social/twitter">
+                        <a target="_blank" href="https://twitter.com/{social/twitter}">
+                            <i title="Twitter" class="fa fa-twitter w3-hover-opacity"/>
+                        </a>
+                        <xsl:text>&#160;</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="social/stackoverflow">
+                        <a target="_blank" href="https://stackoverflow.com/users/{social/stackoverflow}">
+                            <i title="Stack Overflow" class="fa fa-stack-overflow w3-hover-opacity"/>
+                        </a>
+                        <xsl:text>&#160;</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="social/github">
+                        <a target="_blank" href="https://github.com/{social/github}">
+                            <i title="GitHub" class="fa fa-github w3-hover-opacity"/>
+                        </a>
+                        <xsl:text>&#160;</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="social/pinterest">
+                        <a target="_blank" href="https://pinterest.com/{social/pinterest}/">
+                            <i title="Pinteres" class="fa fa-pinterest w3-hover-opacity"/>
+                        </a>
+                        <xsl:text>&#160;</xsl:text>
+                    </xsl:if>
+                    <xsl:for-each select="social/link">
+                        <a target="_blank" href="{@url}">
+                            <i title="{.}" class="fa fa-link w3-hover-opacity"/>
+                        </a>
+                        <xsl:text>&#160;</xsl:text>
+                    </xsl:for-each>
+                    <p class="w3-medium">
+                        <xsl:text>Powered by </xsl:text>
+                        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>
+                    </p>
+                    <!-- End footer -->
+                </footer>
                 <!-- END PAGE CONTENT -->
             </div>
         </div>
