@@ -84,6 +84,7 @@
         <xs:complexContent>
             <xs:extension base="localized-string-type">
                 <xs:attribute name="logo" type="xs:string"/>
+                <xs:attribute name="url" type="xs:string"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>

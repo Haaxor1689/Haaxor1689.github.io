@@ -26,8 +26,8 @@
                 <text lang="en">iOS App Developer</text>
                 <text lang="sk">Vývojár aplikácií pre systém iOS</text>
             </title>
-            <company logo="img/logo/master.png">
-                <text lang="en">Master Internet</text>
+            <company logo="img/logo/master.png" url="https://www.masterapp.cz/">
+                <text lang="en">Master App</text>
             </company>
             <location>
                 <text lang="en">District Brno-City, Czech Republic</text>
@@ -44,7 +44,7 @@
                 <text lang="en">Undergraduate Teaching Assistant</text>
                 <text lang="sk">Vysokoškolský asistent učiteľa</text>
             </title>
-            <company logo="img/logo/muni.png">
+            <company logo="img/logo/muni.png" url="https://www.fi.muni.cz/">
                 <text lang="en">Masaryk University Brno</text>
                 <text lang="sk">Masarykova Univerzita Brno</text>
             </company>
@@ -63,7 +63,7 @@
                 <text lang="en">DTP Specialist</text>
                 <text lang="sk">DTP Špecialista</text>
             </title>
-            <company logo="img/logo/moravia.png">
+            <company logo="img/logo/moravia.png" url="https://www.moravia.com/">
                 <text lang="en">Moravia</text>
             </company>
             <location>
@@ -82,7 +82,7 @@
                 <text lang="en">Software Tester</text>
                 <text lang="sk">Softvérový tester</text>
             </title>
-            <company logo="img/logo/ceitec.png">
+            <company logo="img/logo/ceitec.png" url="https://www.ceitec.cz/">
                 <text lang="en">CEITEC - Central European Institute of Technology</text>
             </company>
             <location>
@@ -99,7 +99,7 @@
     </section>
     <section type="Education">
         <education name="BcMuni">
-            <school logo="img/logo/muni.png">
+            <school logo="img/logo/muni.png" url="https://www.fi.muni.cz/">
                 <text lang="en">Masaryk University Brno</text>
                 <text lang="sk">Masarykova Univerzita Brno</text>
             </school>
@@ -128,7 +128,7 @@
                 <text lang="en">Programming</text>
             </field>
             <description>
-                <text lang="en">My preffered language of choice is C++, which I've spent most time coding in. Other languages I use are Swift and Objective-c as an iOS developer and C# in my Unity projects at school. I have worked with frameworks such as QT, Unity and OpenGL(glad + GLFW).</text>
+                <text lang="en">My preffered language of choice is C++, which I've spent most time coding in. Other languages I use are Swift and Objective-c as an iOS developer and C# in my Unity projects at school. I have worked with frameworks such as QT, Unity and OpenGL.</text>
             </description>
         </skill>
         <skill name="Design">
