@@ -2,9 +2,15 @@
 <xsl:transform version="2.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="html" encoding="UTF-8" indent="yes" doctype-public="-//W3C//DTD HTML 4.01//EN" doctype-system="http://www.w3.org/TR/html4/strict.dtd"/>
+    <!-- Custom functions -->
+    <!-- <xsl:function name="format-gYearMonth"><xsl:param name="date" as="xs:gYearMonth"/><xsl:value-of select="format-date(xs:date(concat($date, '-00')), '[MNn], [Y]', 'en')"/></xsl:function> -->
+    <!-- Root node -->
     <xsl:template match="/portfolio">
         <html>
-            <title>My Portfolio</title>
+            <title>
+                <xsl:value-of select="name"/>
+                <xsl:text>'s Portfolio</xsl:text>
+            </title>
             <meta charset="UTF-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
@@ -78,12 +84,45 @@
             </body>
         </html>
     </xsl:template>
+    <!-- Experience -->
     <xsl:template match="/portfolio/section/experience">
-        <p>Placeholder</p>
+        <div class="w3-padding-16">
+            <h3 class="w3-text-light-grey inline">
+                <xsl:apply-templates select="title/text"/>
+            </h3>
+            <xsl:text> at </xsl:text>
+            <span class="w3-text-light-grey">
+                <xsl:apply-templates select="company/text"/>
+            </span>
+            <xsl:if test="not(end)">
+                <xsl:text> (current)</xsl:text>
+            </xsl:if>
+            <p>
+                <xsl:value-of select="start"/>
+                <!-- <xsl:value-of select="format-gYearMonth(start)"/>  -->
+                <xsl:text> - </xsl:text>
+                <xsl:choose>
+                    <xsl:when test="end">
+                        <xsl:value-of select="end"/>
+                        <!-- <xsl:value-of select="format-gYearMonth(end)"/> -->
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>Present</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <xsl:text>, in </xsl:text>
+                <xsl:apply-templates select="location/text"/>
+            </p>
+            <p>
+                <xsl:apply-templates select="description/text"/>
+            </p>
+        </div>
     </xsl:template>
+    <!-- Education -->
     <xsl:template match="/portfolio/section/education">
         <p>Placeholder</p>
     </xsl:template>
+    <!-- Skills -->
     <xsl:template match="/portfolio/section/skill">
         <div class="w3-padding-16 indented">
             <span class="w3-text-light-grey">
@@ -93,6 +132,7 @@
             <xsl:apply-templates select="description/text"/>
         </div>
     </xsl:template>
+    <!-- Projects -->
     <xsl:template match="/portfolio/section/project">
         <p>Placeholder</p>
     </xsl:template>
