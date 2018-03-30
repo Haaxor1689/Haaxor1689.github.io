@@ -84,6 +84,30 @@
                         </a>
                         <xsl:text>&#160;</xsl:text>
                     </xsl:if>
+                    <xsl:if test="social/facebook">
+                        <a target="_blank" href="https://www.facebook.com/{social/facebook}">
+                            <i title="Facebook" class="fa fa-facebook w3-hover-opacity"/>
+                        </a>
+                        <xsl:text>&#160;</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="social/instagram">
+                        <a target="_blank" href="https://www.instagram.com/{social/instagram}">
+                            <i title="Instagram" class="fa fa-instagram w3-hover-opacity"/>
+                        </a>
+                        <xsl:text>&#160;</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="social/youtube">
+                        <a target="_blank" href="https://www.youtube.com/channel/{social/youtube}">
+                            <i title="Youtube" class="fa fa-youtube w3-hover-opacity"/>
+                        </a>
+                        <xsl:text>&#160;</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="social/twitch">
+                        <a target="_blank" href="https://www.twitch.tv/{social/twitch}">
+                            <i title="Twitch" class="fa fa-twitch w3-hover-opacity"/>
+                        </a>
+                        <xsl:text>&#160;</xsl:text>
+                    </xsl:if>
                     <xsl:if test="social/twitter">
                         <a target="_blank" href="https://twitter.com/{social/twitter}">
                             <i title="Twitter" class="fa fa-twitter w3-hover-opacity"/>
