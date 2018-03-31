@@ -128,7 +128,7 @@
     <!---->
     <xs:simpleType name="language-type">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="gb"/>
+            <xs:enumeration value="en"/>
             <xs:enumeration value="sk"/>
         </xs:restriction>
     </xs:simpleType>

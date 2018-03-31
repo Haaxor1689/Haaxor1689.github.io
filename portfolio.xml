@@ -5,11 +5,11 @@
     <name>Maroš Beťko</name>
     <email>betkomaros@gmail.com</email>
     <headline>
-        <text lang="gb">iOS App Developer at Master Internet</text>
+        <text lang="en">iOS App Developer at Master Internet</text>
         <text lang="sk">iOS vývojár pre Master Internet</text>
     </headline>
     <summary>
-        <text lang="gb">I'm studying Informatics and Design on Masaryk University in Brno. Currently looking for any freelance work connected to C++ or game development. Game development is one of my biggest passions. In my free time I try to develop my skills in this field, ranging from coding to art development. I have an ongoing game project that I like to develop and expand, and try new ideas on. I like challenges that require creative thinking and solving them inspires and motivates me. I'm thorough and organized and hate shoddy quality work and that is what I want my work to reflect.</text>
+        <text lang="en">I'm studying Informatics and Design on Masaryk University in Brno. Currently looking for any freelance work connected to C++ or game development. Game development is one of my biggest passions. In my free time I try to develop my skills in this field, ranging from coding to art development. I have an ongoing game project that I like to develop and expand, and try new ideas on. I like challenges that require creative thinking and solving them inspires and motivates me. I'm thorough and organized and hate shoddy quality work and that is what I want my work to reflect.</text>
         <text lang="sk">Študujem informatiku a grafický dizajn na Masarykoevj Univeryite v Brne. Medzi moje záľuby patrí herný dizaj a rád sa tomuto koníčku venujem vo svojom voľnom čase. Do budúcnosti je mojim cieľom uplatniť sa v hernom priemysle, buď ako programátor vo veľkom štúdiu alebo aj ako nezávislý vývojár. Mám rád výzvy, ktoré vyžadújú kreatívne myslenie a riešenie takýchto úloh ma motivuje. Som dôkladný a organizovaný a nemám rád odfláknutú prácu, a to je presne čo chcem aby moja práca ukazovala.</text>
     </summary>
     <social>
@@ -23,76 +23,76 @@
     <section type="Experience">
         <experience name="iOSDeveloper">
             <title>
-                <text lang="gb">iOS App Developer</text>
+                <text lang="en">iOS App Developer</text>
                 <text lang="sk">Vývojár aplikácií pre systém iOS</text>
             </title>
             <company logo="img/logo/master.png" url="https://www.masterapp.cz/">
-                <text lang="gb">Master App</text>
+                <text lang="en">Master App</text>
             </company>
             <location>
-                <text lang="gb">District Brno-City, Czech Republic</text>
+                <text lang="en">District Brno-City, Czech Republic</text>
                 <text lang="sk">Okres Brno-město, Česká republika</text>
             </location>
             <start>2017-05</start>
             <description>
-                <text lang="gb">Programming and designing new apps for iOS in Swift and Objective-C language.</text>
+                <text lang="en">Programming and designing new apps for iOS in Swift and Objective-C language.</text>
                 <text lang="sk">Programovanie s dizajnovanie nových aplikácií pre iOS v jazykoch Swift a Objective-C.</text>
             </description>
         </experience>
         <experience name="TeachingAssistant">
             <title>
-                <text lang="gb">Undergraduate Teaching Assistant</text>
+                <text lang="en">Undergraduate Teaching Assistant</text>
                 <text lang="sk">Vysokoškolský asistent učiteľa</text>
             </title>
             <company logo="img/logo/muni.png" url="https://www.fi.muni.cz/">
-                <text lang="gb">Masaryk University Brno</text>
+                <text lang="en">Masaryk University Brno</text>
                 <text lang="sk">Masarykova Univerzita Brno</text>
             </company>
             <location>
-                <text lang="gb">District Brno-City, Czech Republic</text>
+                <text lang="en">District Brno-City, Czech Republic</text>
                 <text lang="sk">Okres Brno-město, Česká republika</text>
             </location>
             <start>2017-06</start>
             <description>
-                <text lang="gb">I assist on course PB161 C++ Programming and PV112 Computer Graphics API in preparation of programming assignments, help students during seminars, answer their questions and score and give feedback on major course assignments.</text>
+                <text lang="en">I assist on course PB161 C++ Programming and PV112 Computer Graphics API in preparation of programming assignments, help students during seminars, answer their questions and score and give feedback on major course assignments.</text>
                 <text lang="sk">Pomoc pri výučbe kurzov PB161 Úvod do programovania v jazyku C++ a PV112 Grafická rozhraní. Podielanie sa na príprave úloh pre študentov, pomoc študentom na cvičeniach a code review veľkých domácich úloh.</text>
             </description>
         </experience>
         <experience name="DtpSpecialist">
             <title>
-                <text lang="gb">DTP Specialist</text>
+                <text lang="en">DTP Specialist</text>
                 <text lang="sk">DTP Špecialista</text>
             </title>
             <company logo="img/logo/moravia.png" url="https://www.moravia.com/">
-                <text lang="gb">Moravia</text>
+                <text lang="en">Moravia</text>
             </company>
             <location>
-                <text lang="gb">District Brno-City, Czech Republic</text>
+                <text lang="en">District Brno-City, Czech Republic</text>
                 <text lang="sk">Okres Brno-město, Česká republika</text>
             </location>
             <start>2015-10</start>
             <end>2017-05</end>
             <description>
-                <text lang="gb">Preparing images, documents or presentations for translations to multiple languages. Fixing and finalizing complete translated materials.</text>
+                <text lang="en">Preparing images, documents or presentations for translations to multiple languages. Fixing and finalizing complete translated materials.</text>
                 <text lang="sk">Príprava obrázkov a elektronických aj tlačených dokumentov na preklad z angličtiny do ostatných jazykov. Finalizácia a opravovanie chýb v preložených dokumentoch.</text>
             </description>
         </experience>
         <experience name="SwTester">
             <title>
-                <text lang="gb">Software Tester</text>
+                <text lang="en">Software Tester</text>
                 <text lang="sk">Softvérový tester</text>
             </title>
             <company logo="img/logo/ceitec.png" url="https://www.ceitec.cz/">
-                <text lang="gb">CEITEC - Central European Institute of Technology</text>
+                <text lang="en">CEITEC - Central European Institute of Technology</text>
             </company>
             <location>
-                <text lang="gb">District Brno-City, Czech Republic</text>
+                <text lang="en">District Brno-City, Czech Republic</text>
                 <text lang="sk">Okres Brno-město, Česká republika</text>
             </location>
             <start>2015-12</start>
             <end>2015-02</end>
             <description>
-                <text lang="gb">Closed beta testing of application for renting of various science equipment and labs.</text>
+                <text lang="en">Closed beta testing of application for renting of various science equipment and labs.</text>
                 <text lang="sk">Testovanie informačného systému pre prenajímanie laboratórií a prístrojov poskytovaných spoločnosťou CEITEC.</text>
             </description>
         </experience>
@@ -100,22 +100,22 @@
     <section type="Education">
         <education name="BcMuni">
             <school logo="img/logo/muni.png" url="https://www.fi.muni.cz/">
-                <text lang="gb">Masaryk University Brno</text>
+                <text lang="en">Masaryk University Brno</text>
                 <text lang="sk">Masarykova Univerzita Brno</text>
             </school>
             <field>
-                <text lang="gb">Applied Informatics and Graphic Design</text>
+                <text lang="en">Applied Informatics and Graphic Design</text>
                 <text lang="sk">Aplikovaná informatika a grafický design</text>
             </field>
             <start>2015</start>
         </education>
         <education name="Gjgt">
             <school logo="img/logo/gjgt.png">
-                <text lang="gb">Gymnasium of Jozef Gregor Tajovský, Banská Bystrica</text>
+                <text lang="en">Gymnasium of Jozef Gregor Tajovský, Banská Bystrica</text>
                 <text lang="sk">Gymnázium Jozefa Gregora Tajovského, Banská Bystrica</text>
             </school>
             <field>
-                <text lang="gb">Mathematics</text>
+                <text lang="en">Mathematics</text>
                 <text lang="sk">Matematika</text>
             </field>
             <start>2011</start>
@@ -125,26 +125,26 @@
     <section type="Skills">
         <skill name="Programming">
             <field>
-                <text lang="gb">Programming</text>
+                <text lang="en">Programming</text>
             </field>
             <description>
-                <text lang="gb">My preffered language of choice is C++, which I've spent most time coding in. Other languages I use are Swift and Objective-c as an iOS developer and C# in my Unity projects at school. I have worked with frameworks such as QT, Unity and OpenGL.</text>
+                <text lang="en">My preffered language of choice is C++, which I've spent most time coding in. Other languages I use are Swift and Objective-c as an iOS developer and C# in my Unity projects at school. I have worked with frameworks such as QT, Unity and OpenGL.</text>
             </description>
         </skill>
         <skill name="Design">
             <field>
-                <text lang="gb">Graphics Design</text>
+                <text lang="en">Graphics Design</text>
             </field>
             <description>
-                <text lang="gb">During my studies at Masaryk University I attended many design classes where I have worked on small projects in Adobe Photoshop, Illustrator and InDesign. I have also created a complete pixel font, and pixel art for projects I have worked on in my spare time.</text>
+                <text lang="en">During my studies at Masaryk University I attended many design classes where I have worked on small projects in Adobe Photoshop, Illustrator and InDesign. I have also created a complete pixel font, and pixel art for projects I have worked on in my spare time.</text>
             </description>
         </skill>
         <skill name="Collab">
             <field>
-                <text lang="gb">Versioning and Collaboration</text>
+                <text lang="en">Versioning and Collaboration</text>
             </field>
             <description>
-                <text lang="gb">I use Git daily and also have experience with various git workflows I used either in work or in group projects at school.</text>
+                <text lang="en">I use Git daily and also have experience with various git workflows I used either in work or in group projects at school.</text>
             </description>
         </skill>
     </section>
@@ -154,10 +154,10 @@
             <start>2017-01</start>
             <end>2017-08</end>
             <role>
-                <text lang="gb">Designer, Programmer and Artist</text>
+                <text lang="en">Designer, Programmer and Artist</text>
             </role>
             <description>
-                <text lang="gb">A Tetris game, written in custom built engine with the use of C++ and SDL2 library.</text>
+                <text lang="en">A Tetris game, written in custom built engine with the use of C++ and SDL2 library.</text>
             </description>
             <link url="https://haaxor.itch.io/tetris">Itch page</link>
             <link url="https://github.com/Haaxor1689/Tetris">Source on Github</link>
@@ -168,10 +168,10 @@
             <start>2016-07</start>
             <end>2016-10</end>
             <role>
-                <text lang="gb">Designer, Programmer and Artist</text>
+                <text lang="en">Designer, Programmer and Artist</text>
             </role>
             <description>
-                <text lang="gb">Small passion project of mine, that I worked on to try out game design and programming.</text>
+                <text lang="en">Small passion project of mine, that I worked on to try out game design and programming.</text>
             </description>
             <link url="http://steamcommunity.com/sharedfiles/filedetails/?id=691919823">Steam Workshop link</link>
         </project>
