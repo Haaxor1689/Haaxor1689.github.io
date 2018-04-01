@@ -14,10 +14,18 @@ body,h1,h2,h3,h4,h5,h6 {
 .w3-row-padding img {
     margin-bottom: 12px
 }
-.spaced {
+
+.smaller {
+    font-size: 80%;
+}
+
+.right-margin {
     margin-right: 5px;
 }
 
+.left-margin {
+    margin-left: 5px;
+}
 
 .grey-background {
     background: #222;

@@ -50,7 +50,8 @@
     <xs:complexType name="education-type">
         <xs:sequence>
             <xs:element name="school" type="company-type"/>
-            <xs:element name="field" type="localized-string-type"/>
+            <xs:element name="degree" type="xs:string" minOccurs="0"/>
+            <xs:element name="field" type="localized-with-url-type"/>
             <xs:element name="start" type="xs:gYear"/>
             <xs:element name="end" type="xs:gYear" minOccurs="0"/>
             <xs:element name="degree" type="xs:string" minOccurs="0"/>
@@ -84,6 +85,13 @@
         <xs:complexContent>
             <xs:extension base="localized-string-type">
                 <xs:attribute name="logo" type="xs:string"/>
+                <xs:attribute name="url" type="xs:string"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="localized-with-url-type">
+        <xs:complexContent>
+            <xs:extension base="localized-string-type">
                 <xs:attribute name="url" type="xs:string"/>
             </xs:extension>
         </xs:complexContent>

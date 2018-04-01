@@ -5,8 +5,8 @@
     <name>Maroš Beťko</name>
     <email>betkomaros@gmail.com</email>
     <headline>
-        <text lang="en">iOS App Developer at Master Internet</text>
-        <text lang="sk">iOS vývojár pre Master Internet</text>
+        <text lang="en">iOS App Developer at Master App</text>
+        <text lang="sk">iOS vývojár pre Master App</text>
     </headline>
     <summary>
         <text lang="en">I'm studying Informatics and Design on Masaryk University in Brno. Currently looking for any freelance work connected to C++ or game development. Game development is one of my biggest passions. In my free time I try to develop my skills in this field, ranging from coding to art development. I have an ongoing game project that I like to develop and expand, and try new ideas on. I like challenges that require creative thinking and solving them inspires and motivates me. I'm thorough and organized and hate shoddy quality work and that is what I want my work to reflect.</text>
@@ -82,7 +82,7 @@
                 <text lang="en">Software Tester</text>
                 <text lang="sk">Softvérový tester</text>
             </title>
-            <company logo="img/logo/ceitec.png" url="https://www.ceitec.cz/">
+            <company logo="img/logo/ceitec.png" url="https://www.ceitec.eu/">
                 <text lang="en">CEITEC - Central European Institute of Technology</text>
             </company>
             <location>
@@ -103,7 +103,8 @@
                 <text lang="en">Masaryk University Brno</text>
                 <text lang="sk">Masarykova Univerzita Brno</text>
             </school>
-            <field>
+            <degree>Bc.</degree>
+            <field url="https://obory.fi.muni.cz/bc/aplikovana-informatika#spec">
                 <text lang="en">Applied Informatics and Graphic Design</text>
                 <text lang="sk">Aplikovaná informatika a grafický design</text>
             </field>

@@ -69,7 +69,7 @@
                         <xsl:value-of select="name"/>
                     </h1>
                     <p>
-                        <xsl:apply-templates select="headline/text"/>
+                        <xsl:apply-templates select="headline"/>
                     </p>
                 </header>
                 <!-- About Section -->
@@ -77,7 +77,7 @@
                     <h2 class="w3-text-light-grey">Summary</h2>
                     <hr style="width:200px" class="w3-opacity"/>
                     <p>
-                        <xsl:apply-templates select="summary/text"/>
+                        <xsl:apply-templates select="summary"/>
                     </p>
                 </div>
                 <!-- Sections -->
@@ -94,52 +94,52 @@
                 <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
                     <xsl:if test="social/linkedin">
                         <a target="_blank" href="https://www.linkedin.com/in/{social/linkedin}">
-                            <i title="LinkedIn" class="fa fa-linkedin w3-hover-opacity spaced"/>
+                            <i title="LinkedIn" class="fa fa-linkedin w3-hover-opacity right-margin"/>
                         </a>
                     </xsl:if>
                     <xsl:if test="social/facebook">
                         <a target="_blank" href="https://www.facebook.com/{social/facebook}">
-                            <i title="Facebook" class="fa fa-facebook w3-hover-opacity spaced"/>
+                            <i title="Facebook" class="fa fa-facebook w3-hover-opacity right-margin"/>
                         </a>
                     </xsl:if>
                     <xsl:if test="social/instagram">
                         <a target="_blank" href="https://www.instagram.com/{social/instagram}">
-                            <i title="Instagram" class="fa fa-instagram w3-hover-opacity spaced"/>
+                            <i title="Instagram" class="fa fa-instagram w3-hover-opacity right-margin"/>
                         </a>
                     </xsl:if>
                     <xsl:if test="social/youtube">
                         <a target="_blank" href="https://www.youtube.com/channel/{social/youtube}">
-                            <i title="Youtube" class="fa fa-youtube w3-hover-opacity spaced"/>
+                            <i title="Youtube" class="fa fa-youtube w3-hover-opacity right-margin"/>
                         </a>
                     </xsl:if>
                     <xsl:if test="social/twitch">
                         <a target="_blank" href="https://www.twitch.tv/{social/twitch}">
-                            <i title="Twitch" class="fa fa-twitch w3-hover-opacity spaced"/>
+                            <i title="Twitch" class="fa fa-twitch w3-hover-opacity right-margin"/>
                         </a>
                     </xsl:if>
                     <xsl:if test="social/twitter">
                         <a target="_blank" href="https://twitter.com/{social/twitter}">
-                            <i title="Twitter" class="fa fa-twitter w3-hover-opacity spaced"/>
+                            <i title="Twitter" class="fa fa-twitter w3-hover-opacity right-margin"/>
                         </a>
                     </xsl:if>
                     <xsl:if test="social/stackoverflow">
                         <a target="_blank" href="https://stackoverflow.com/users/{social/stackoverflow}">
-                            <i title="Stack Overflow" class="fa fa-stack-overflow w3-hover-opacity spaced"/>
+                            <i title="Stack Overflow" class="fa fa-stack-overflow w3-hover-opacity right-margin"/>
                         </a>
                     </xsl:if>
                     <xsl:if test="social/github">
                         <a target="_blank" href="https://github.com/{social/github}">
-                            <i title="GitHub" class="fa fa-github w3-hover-opacity spaced"/>
+                            <i title="GitHub" class="fa fa-github w3-hover-opacity right-margin"/>
                         </a>
                     </xsl:if>
                     <xsl:if test="social/pinterest">
                         <a target="_blank" href="https://pinterest.com/{social/pinterest}/">
-                            <i title="Pinteres" class="fa fa-pinterest w3-hover-opacity spaced"/>
+                            <i title="Pinteres" class="fa fa-pinterest w3-hover-opacity right-margin"/>
                         </a>
                     </xsl:if>
                     <xsl:for-each select="social/link">
                         <a target="_blank" href="{@url}">
-                            <i title="{.}" class="fa fa-link w3-hover-opacity spaced"/>
+                            <i title="{.}" class="fa fa-link w3-hover-opacity right-margin"/>
                         </a>
                     </xsl:for-each>
                     <p class="w3-medium">
@@ -156,15 +156,14 @@
     <xsl:template match="/portfolio/section/experience">
         <div class="w3-padding-16">
             <h3 class="w3-text-light-grey inline">
-                <xsl:apply-templates select="title/text"/>
+                <xsl:apply-templates select="title"/>
             </h3>
-            <xsl:text> at </xsl:text>
-            <span class="w3-text-light-grey">
-                <xsl:apply-templates select="company"/>
-            </span>
             <xsl:if test="not(end)">
                 <xsl:text> (current)</xsl:text>
             </xsl:if>
+            <h5 class="w3-text-light-grey">
+                <xsl:apply-templates select="company"/>
+            </h5>
             <p>
                 <xsl:value-of select="start"/>
                 <xsl:text> - </xsl:text>
@@ -177,26 +176,31 @@
                     </xsl:otherwise>
                 </xsl:choose>
                 <xsl:text>, in </xsl:text>
-                <xsl:apply-templates select="location/text"/>
+                <xsl:apply-templates select="location"/>
             </p>
-            <p>
-                <xsl:apply-templates select="description/text"/>
-            </p>
+            <ul>
+                <li>
+                    <xsl:apply-templates select="description"/>
+                </li>
+            </ul>
         </div>
     </xsl:template>
     <!-- Education -->
     <xsl:template match="/portfolio/section/education">
         <div class="w3-padding-16">
+            <xsl:if test="degree">
+                <xsl:value-of select="degree"/>
+                <xsl:text>&#160;</xsl:text>
+            </xsl:if>
             <h3 class="w3-text-light-grey inline">
-                <xsl:apply-templates select="field/text"/>
+                <xsl:apply-templates select="field"/>
             </h3>
-            <xsl:text> at </xsl:text>
-            <span class="w3-text-light-grey">
-                <xsl:apply-templates select="school"/>
-            </span>
             <xsl:if test="not(end)">
                 <xsl:text> (current)</xsl:text>
             </xsl:if>
+            <p class="w3-text-light-grey">
+                <xsl:apply-templates select="school"/>
+            </p>
             <p>
                 <xsl:value-of select="start"/>
                 <xsl:text> - </xsl:text>
@@ -215,10 +219,10 @@
     <xsl:template match="/portfolio/section/skill">
         <div class="w3-padding-16 indented">
             <span class="w3-text-light-grey">
-                <xsl:apply-templates select="field/text"/>
+                <xsl:apply-templates select="field"/>
             </span>
             <xsl:text>&#160;</xsl:text>
-            <xsl:apply-templates select="description/text"/>
+            <xsl:apply-templates select="description"/>
         </div>
     </xsl:template>
     <!-- Projects -->
@@ -244,39 +248,33 @@
                 </xsl:choose>
             </p>
             <h5 class="w3-text-light-grey inline">Role: </h5>
-            <xsl:apply-templates select="role/text"/>
+            <xsl:apply-templates select="role"/>
             <p>
-                <xsl:apply-templates select="description/text"/>
+                <xsl:apply-templates select="description"/>
             </p>
         </div>
     </xsl:template>
-    <!-- Company -->
-    <xsl:template match="//*[self::company or self::school]">
-        <xsl:choose>
-            <xsl:when test="@url">
-                <a href="{@url}">
-                    <xsl:apply-templates select="text"/>
-                </a>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:apply-templates select="text"/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-    <!-- Localized text -->
-    <xsl:template match="//text">
-        <xsl:if test="@lang = $lang">
-            <xsl:value-of select="."/>
+    <!-- Link or localized -->
+    <xsl:template match="//*[@url|text]">
+        <xsl:for-each select="text">
+            <xsl:if test="@lang = $lang">
+                <xsl:value-of select="."/>
+            </xsl:if>
+        </xsl:for-each>
+        <xsl:if test="@url">
+            <a target="_blank" href="{@url}">
+                <i class="fa fa-link w3-hover-opacity w3-text-grey left-margin smaller"/>
+            </a>
         </xsl:if>
     </xsl:template>
     <!-- Country flag -->
     <xsl:template name="flag">
         <xsl:choose>
             <xsl:when test="current()[.='en']">
-                <i class="flag flag-24 flag-gb spaced"/>
+                <i class="flag flag-24 flag-gb right-margin"/>
             </xsl:when>
             <xsl:otherwise>
-                <i class="flag flag-24 flag-{.} spaced"/>
+                <i class="flag flag-24 flag-{.} right-margin"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
