@@ -2,103 +2,103 @@ html {
     background: #222;
     font-family: "Montserrat", sans-serif;
     color: #222;
-  }
-  
-  body {
+}
+
+body {
     margin: 0 auto 0 auto;
     max-width: 720px;
     background: #eee;
-  }
-  
-  .content {
+}
+
+.content {
     padding: 2rem 4rem 4rem 4rem;
-  }
-  
-  nav, footer{
+}
+
+nav, footer{
     background: #000;
     padding: 2rem 4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-align: center;
     flex-grow: 1;
     margin: .5rem 1rem;
-  }
-  
-  header {
+}
+
+header {
     text-align: center;
     background: #444;
     color: #ddd;
     padding: 2rem 0;
-  }
-  
-  h2 {
+}
+
+h2 {
     padding-bottom: 1rem;
     border-bottom: 1px dashed #444;
-  }
-  
-  h3 {
+}
+
+h3 {
     display: inline-block;
-  }
-  
-  h6 {
+}
+
+h6 {
     font-size: 1rem;
     display: inline-block;
-  }
-  
-  h3, h4, h5, h6, p {
+}
+
+h3, h4, h5, h6, p {
     margin: 0 0 .75rem 0;
-  }
-  
-  a:link, a:visited {
+}
+
+a:link, a:visited {
     color: #888;
     text-decoration-style: dashed;
-  }
-  
-  ul {
+}
+
+ul {
     margin: 0;
-  }
-  
-  p {
+}
+
+p {
     display: list-item;
     list-style-type: disc;
     list-style-position: inside;
     text-indent: -1.35rem;
     padding-left: 1.35rem;
-  }
-  
-  .summary-text {
+}
+
+.summary-text {
     display: inline-block;
     text-indent: -1rem;
     padding-left: 0;
-  }
-  
-  .portfolio-item {
+}
+
+.portfolio-item {
     padding: 1rem 0 1rem 1rem;
-  }
-  
-  .portfolio-item > *:first-child {
+}
+
+.portfolio-item > *:first-child {
     text-indent: -1rem;
-  }
-  
-  .portfolio-item:first-of-type {
+}
+
+.portfolio-item:first-of-type {
     padding-top: 0;
-  }
-  
-  .skill-title {
+}
+
+.skill-title {
     padding-right: .5rem;
     display: inline-block;
     margin-bottom: 0;
-  }
-  
-  .prefix {
+}
+
+.prefix {
     padding-right: .25rem;
     display: inline-block;
-  }
-  
-  .postfix {
+}
+
+.postfix {
     padding-left: .25rem;
-  }
+}
