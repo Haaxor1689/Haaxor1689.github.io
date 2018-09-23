@@ -1,180 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="style.xsl"?>
-<portfolio 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
-    <name>Maroš Beťko</name>
-    <email>betkomaros@gmail.com</email>
-    <headline>
-        <text lang="en">iOS App Developer at Master App</text>
-        <text lang="sk">iOS vývojár pre Master App</text>
-    </headline>
-    <summary>
-        <text lang="en">I'm studying Informatics and Design on Masaryk University in Brno. Currently looking for any freelance work connected to C++ or game development. Game development is one of my biggest passions. In my free time I try to develop my skills in this field, ranging from coding to art development. I have an ongoing game project that I like to develop and expand, and try new ideas on. I like challenges that require creative thinking and solving them inspires and motivates me. I'm thorough and organized and hate shoddy quality work and that is what I want my work to reflect.</text>
-        <text lang="sk">Študujem informatiku a grafický dizajn na Masarykoevj Univeryite v Brne. Medzi moje záľuby patrí herný dizaj a rád sa tomuto koníčku venujem vo svojom voľnom čase. Do budúcnosti je mojim cieľom uplatniť sa v hernom priemysle, buď ako programátor vo veľkom štúdiu alebo aj ako nezávislý vývojár. Mám rád výzvy, ktoré vyžadújú kreatívne myslenie a riešenie takýchto úloh ma motivuje. Som dôkladný a organizovaný a nemám rád odfláknutú prácu, a to je presne čo chcem aby moja práca ukazovala.</text>
-    </summary>
-    <social>
-        <linkedin>betkomaros</linkedin>
-        <twitter>Haaxor1689</twitter>
-        <stackoverflow>7216259</stackoverflow>
-        <github>Haaxor1689</github>
-        <pinterest>betkomaros</pinterest>
-        <link url="https://haaxor1689.github.io/">Portfolio</link>
-    </social>
-    <section type="Experience">
-        <experience name="iOSDeveloper">
-            <title>
-                <text lang="en">iOS App Developer</text>
-                <text lang="sk">Vývojár aplikácií pre systém iOS</text>
-            </title>
-            <company logo="img/logo/master.png" url="https://www.masterapp.cz/">
-                <text lang="en">Master App</text>
-            </company>
-            <location>
-                <text lang="en">District Brno-City, Czech Republic</text>
-                <text lang="sk">Okres Brno-město, Česká republika</text>
-            </location>
-            <start>2017-05</start>
-            <description>
-                <text lang="en">Programming and designing new apps for iOS in Swift and Objective-C language.</text>
-                <text lang="sk">Programovanie s dizajnovanie nových aplikácií pre iOS v jazykoch Swift a Objective-C.</text>
-            </description>
-        </experience>
-        <experience name="TeachingAssistant">
-            <title>
-                <text lang="en">Undergraduate Teaching Assistant</text>
-                <text lang="sk">Vysokoškolský asistent učiteľa</text>
-            </title>
-            <company logo="img/logo/muni.png" url="https://www.fi.muni.cz/">
-                <text lang="en">Masaryk University Brno</text>
-                <text lang="sk">Masarykova Univerzita Brno</text>
-            </company>
-            <location>
-                <text lang="en">District Brno-City, Czech Republic</text>
-                <text lang="sk">Okres Brno-město, Česká republika</text>
-            </location>
-            <start>2017-06</start>
-            <description>
-                <text lang="en">I assist on course PB161 C++ Programming and PV112 Computer Graphics API in preparation of programming assignments, help students during seminars, answer their questions and score and give feedback on major course assignments.</text>
-                <text lang="sk">Pomoc pri výučbe kurzov PB161 Úvod do programovania v jazyku C++ a PV112 Grafická rozhraní. Podielanie sa na príprave úloh pre študentov, pomoc študentom na cvičeniach a code review veľkých domácich úloh.</text>
-            </description>
-        </experience>
-        <experience name="DtpSpecialist">
-            <title>
-                <text lang="en">DTP Specialist</text>
-                <text lang="sk">DTP Špecialista</text>
-            </title>
-            <company logo="img/logo/moravia.png" url="https://www.moravia.com/">
-                <text lang="en">Moravia</text>
-            </company>
-            <location>
-                <text lang="en">District Brno-City, Czech Republic</text>
-                <text lang="sk">Okres Brno-město, Česká republika</text>
-            </location>
-            <start>2015-10</start>
-            <end>2017-05</end>
-            <description>
-                <text lang="en">Preparing images, documents or presentations for translations to multiple languages. Fixing and finalizing complete translated materials.</text>
-                <text lang="sk">Príprava obrázkov a elektronických aj tlačených dokumentov na preklad z angličtiny do ostatných jazykov. Finalizácia a opravovanie chýb v preložených dokumentoch.</text>
-            </description>
-        </experience>
-        <experience name="SwTester">
-            <title>
-                <text lang="en">Software Tester</text>
-                <text lang="sk">Softvérový tester</text>
-            </title>
-            <company logo="img/logo/ceitec.png" url="https://www.ceitec.eu/">
-                <text lang="en">CEITEC - Central European Institute of Technology</text>
-            </company>
-            <location>
-                <text lang="en">District Brno-City, Czech Republic</text>
-                <text lang="sk">Okres Brno-město, Česká republika</text>
-            </location>
-            <start>2015-12</start>
-            <end>2015-02</end>
-            <description>
-                <text lang="en">Closed beta testing of application for renting of various science equipment and labs.</text>
-                <text lang="sk">Testovanie informačného systému pre prenajímanie laboratórií a prístrojov poskytovaných spoločnosťou CEITEC.</text>
-            </description>
-        </experience>
-    </section>
-    <section type="Education">
-        <education name="BcMuni">
-            <school logo="img/logo/muni.png" url="https://www.fi.muni.cz/">
-                <text lang="en">Masaryk University Brno</text>
-                <text lang="sk">Masarykova Univerzita Brno</text>
-            </school>
-            <degree>Bc.</degree>
-            <field url="https://obory.fi.muni.cz/bc/aplikovana-informatika#spec">
-                <text lang="en">Applied Informatics and Graphic Design</text>
-                <text lang="sk">Aplikovaná informatika a grafický design</text>
-            </field>
-            <start>2015</start>
-        </education>
-        <education name="Gjgt">
-            <school logo="img/logo/gjgt.png">
-                <text lang="en">Gymnasium of Jozef Gregor Tajovský, Banská Bystrica</text>
-                <text lang="sk">Gymnázium Jozefa Gregora Tajovského, Banská Bystrica</text>
-            </school>
-            <field>
-                <text lang="en">Mathematics</text>
-                <text lang="sk">Matematika</text>
-            </field>
-            <start>2011</start>
-            <end>2015</end>
-        </education>
-    </section>
-    <section type="Skills">
-        <skill name="Programming">
-            <field>
-                <text lang="en">Programming</text>
-            </field>
-            <description>
-                <text lang="en">My preffered language of choice is C++, which I've spent most time coding in. Other languages I use are Swift and Objective-c as an iOS developer and C# in my Unity projects at school. I have worked with frameworks such as QT, Unity and OpenGL.</text>
-            </description>
-        </skill>
-        <skill name="Design">
-            <field>
-                <text lang="en">Graphics Design</text>
-            </field>
-            <description>
-                <text lang="en">During my studies at Masaryk University I attended many design classes where I have worked on small projects in Adobe Photoshop, Illustrator and InDesign. I have also created a complete pixel font, and pixel art for projects I have worked on in my spare time.</text>
-            </description>
-        </skill>
-        <skill name="Collab">
-            <field>
-                <text lang="en">Versioning and Collaboration</text>
-            </field>
-            <description>
-                <text lang="en">I use Git daily and also have experience with various git workflows I used either in work or in group projects at school.</text>
-            </description>
-        </skill>
-    </section>
-    <section type="Projects">
-        <project name="Tetris">
-            <name>Tetris</name>
-            <start>2017-01</start>
-            <end>2017-08</end>
-            <role>
-                <text lang="en">Designer, Programmer and Artist</text>
-            </role>
-            <description>
-                <text lang="en">A Tetris game, written in custom built engine with the use of C++ and SDL2 library.</text>
-            </description>
-            <link url="https://haaxor.itch.io/tetris">Itch page</link>
-            <link url="https://github.com/Haaxor1689/Tetris">Source on Github</link>
-        </project>
-        <project name="YourEvilness">
-            <name>Your Evilness</name>
-            <type>Prototype</type>
-            <start>2016-07</start>
-            <end>2016-10</end>
-            <role>
-                <text lang="en">Designer, Programmer and Artist</text>
-            </role>
-            <description>
-                <text lang="en">Small passion project of mine, that I worked on to try out game design and programming.</text>
-            </description>
-            <link url="http://steamcommunity.com/sharedfiles/filedetails/?id=691919823">Steam Workshop link</link>
-        </project>
-    </section>
+<portfolio>
+    <GeneralInfo>
+        <Name>Maroš Beťko</Name>
+        <Email>betkomaros@gmail.com</Email>
+        <Headline>iOS App Developer at Master App</Headline>
+        <Summary>I'm studying Informatics and Design on Masaryk University in Brno. Currently looking for any freelance work connected to C++ or game development. Game development is one of my biggest passions. In my free time I try to develop my skills in this field, ranging from coding to art development. I have an ongoing game project that I like to develop and expand, and try new ideas on. I like challenges that require creative thinking and solving them inspires and motivates me. I'm thorough and organized and hate shoddy quality work and that is what I want my work to reflect.</Summary>
+    </GeneralInfo>
+    <Social>
+        <Linkedin>betkomaros</Linkedin>
+        <Twitter>Haaxor1689</Twitter>
+        <Stackoverflow>7216259</Stackoverflow>
+        <Github>Haaxor1689</Github>
+        <Pinterest>betkomaros</Pinterest>
+        <Link Url="https://haaxor1689.github.io/">Portfolio</Link>
+    </Social>
+    <Experience>
+        <Position>
+            <Title>Full-stack developer</Title>
+            <Company Logo="img/logo/kentico.png" Url="http://www.kentico.com/">Kentico Software</Company>
+            <Location>District Brno-City, Czech Republic</Location>
+            <Start>2017-05</Start>
+            <Description>Developing Kentico CMS product.</Description>
+        </Position>
+        <Position>
+            <Title>iOS App Developer</Title>
+            <Company Logo="img/logo/master.png" Url="https://www.masterapp.cz/">Master App</Company>
+            <Location>District Brno-City, Czech Republic</Location>
+            <Start>2017-05</Start>
+            <End>2018-06</End>
+            <Description>Programming and designing new apps for iOS in Swift and Objective-C Languageuage.</Description>
+        </Position>
+        <Position>
+            <Title>Undergraduate Teaching Assistant</Title>
+            <Company Logo="img/logo/muni.png" Url="https://www.fi.muni.cz/">Masaryk University Brno</Company>
+            <Location>District Brno-City, Czech Republic</Location>
+            <Start>2017-06</Start>
+            <Description>I assist on course PB161 C++ Programming and PV112 Computer Graphics API in preparation of programming assignments, help students during seminars, answer their questions and score and give feedback on major course assignments.</Description>
+        </Position>
+        <Position>
+            <Title>DTP Specialist</Title>
+            <Company Logo="img/logo/moravia.png" Url="https://www.moravia.com/">Moravia</Company>
+            <Location>District Brno-City, Czech Republic</Location>
+            <Start>2015-10</Start>
+            <End>2017-05</End>
+            <Description>Preparing images, documents or presentations for translations to multiple Languageuages. Fixing and finalizing complete translated materials.</Description>
+        </Position>
+        <Position>
+            <Title>Software Tester</Title>
+            <Company Logo="img/logo/ceitec.png" Url="https://www.ceitec.eu/">CEITEC - Central European Institute of Technology</Company>
+            <Location>District Brno-City, Czech Republic</Location>
+            <Start>2015-12</Start>
+            <End>2015-02</End>
+            <Description>Closed beta testing of application for renting of various science equipment and labs.</Description>
+        </Position>
+    </Experience>
+    <Education>
+        <Study>
+            <School Logo="img/logo/muni.png" Url="https://www.fi.muni.cz/">Masaryk University Brno</School>
+            <Degree>Bc.</Degree>
+            <Field Url="https://obory.fi.muni.cz/bc/aplikovana-informatika#spec">Applied Informatics and Graphic Design</Field>
+            <Start>2015</Start>
+        </Study>
+        <Study>
+            <School Logo="img/logo/gjgt.png">Gymnasium of Jozef Gregor Tajovský, Banská Bystrica</School>
+            <Field>Mathematics</Field>
+            <Start>2011</Start>
+            <End>2015</End>
+        </Study>
+    </Education>
+    <Skills>
+        <Skill>
+            <Field>Programming</Field>
+            <Description>My preffered Languageuage of choice is C++, which I've spent most time coding in. Other Languageuages I use are Swift and Objective-c as an iOS developer and C# in my Unity projects at school. I have worked with frameworks such as QT, Unity and OpenGL.</Description>
+        </Skill>
+        <Skill>
+            <Field>Graphics Design</Field>
+            <Description>During my studies at Masaryk University I attended many design classes where I have worked on small projects in Adobe Photoshop, Illustrator and InDesign. I have also created a complete pixel font, and pixel art for projects I have worked on in my spare time.</Description>
+        </Skill>
+        <Skill>
+            <Field>Versioning and Collaboration</Field>
+            <Description>I use Git daily and also have experience with various git workflows I used either in work or in group projects at school.</Description>
+        </Skill>
+    </Skills>
+    <Projects>
+        <Project>
+            <Name>Interpreter</Name>
+            <Start>2018-01</Start>
+            <End>2018-08</End>
+            <Role>Programmer</Role>
+            <Description>Interpreter with custom syntax written in C++.</Description>
+            <Link Url="https://github.com/Haaxor1689/Interpreter">Source on Github</Link>
+        </Project>
+        <Project>
+            <Name>Portfolio builder</Name>
+            <Start>2018-01</Start>
+            <End>2018-06</End>
+            <Role>Programmer</Role>
+            <Description>Tool for creating portfolio saved in XML format, with multiple export options.</Description>
+            <Link Url="https://haaxor1689.github.io/PortfolioBuilder/">Online tool</Link>
+            <Link Url="https://github.com/Haaxor1689/PortfolioBuilder">Source on Github</Link>
+        </Project>
+        <Project>
+            <Name>Collision detection simulation</Name>
+            <Start>2018-01</Start>
+            <End>2018-06</End>
+            <Role>Programmer</Role>
+            <Description>3D breakout game on a circular game area with custom collision detection, made with OpenGL and C++.</Description>
+            <Link Url="https://github.com/Haaxor1689/CollisionDetection">Source on Github</Link>
+        </Project>
+        <Project>
+            <Name>Tetris</Name>
+            <Start>2017-01</Start>
+            <End>2017-08</End>
+            <Role>Designer, Programmer and Artist</Role>
+            <Description>A Tetris game, written in custom built engine with the use of C++ and SDL2 library.</Description>
+            <Link Url="https://haaxor.itch.io/tetris">Itch page</Link>
+            <Link Url="https://github.com/Haaxor1689/Tetris">Source on Github</Link>
+        </Project>
+        <Project>
+            <Name>Your Evilness</Name>
+            <Type>Prototype</Type>
+            <Start>2016-07</Start>
+            <End>2016-10</End>
+            <Role>Designer, Programmer and Artist</Role>
+            <Description>Small passion project of mine, that I worked on to try out game design and programming.</Description>
+            <Link Url="http://steamcommunity.com/sharedfiles/filedetails/?id=691919823">Steam Workshop link</Link>
+        </Project>
+    </Projects>
 </portfolio>
