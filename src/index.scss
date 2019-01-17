@@ -1,0 +1,35 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    @extend .bg-light;
+    height: 100%;
+
+    .header-brand {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+
+        .header-title {
+            font-size: 24px;
+            font-weight: 800;
+        }
+    
+        .header-subtitle {
+            font-size: 12px;
+            color: $gray-600;
+            font-weight: 400;
+        }
+
+    }
+
+    .nav-button {
+        @extend .d-block;
+        @extend .d-sm-none;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+}
