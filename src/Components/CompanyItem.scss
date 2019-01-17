@@ -1,16 +1,30 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .company {
     margin-bottom: 24px;
 
     .company-logo-wrapper {
         width: 60px;
         height: 60px;
-        margin-right: 12px;
+        margin-right: 16px;
     
         .company-logo {
             @extend .mr-3;
+            @include vertical-align();
             width: 60px;
         }
+    }
+
+    .company-heading {
+        font-weight: 600;
+        font-size: 18px;
     }
 }

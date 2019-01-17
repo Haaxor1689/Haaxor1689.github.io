@@ -9,39 +9,38 @@ export interface IPortfolio {
 
 export interface IBiography {
     readonly name: string;
-    readonly email: string;
     readonly headline: string;
     readonly summary: string;
 }
 
 export interface IContacts {
-    readonly linkedin: string;
-    readonly twitter: string;
-    readonly stackoverflow: string;
-    readonly github: string;
-    readonly pinterest: string;
+    readonly email?: string;
+    readonly linkedin?: string;
+    readonly twitter?: string;
+    readonly stackoverflow?: string;
+    readonly github?: string;
+    readonly pinterest?: string;
     readonly links: ILink[];
 }
 
-export interface IPotfolioItem {
-    readonly location?: string;
+export interface IPortfolioItem {
     readonly start: string;
     readonly end?: string;
     readonly description?: string;
 }
 
-export interface IExperience extends IPotfolioItem {
+export interface IExperience extends IPortfolioItem {
     readonly title: string;
     readonly company: ICompany;
 }
 
-export interface IEducation extends IPotfolioItem {
-    readonly school: ICompany;
+export interface IEducation extends IPortfolioItem {
     readonly degree?: string;
     readonly field: string;
+    readonly school: ICompany;
 }
 
-export interface IProject extends IPotfolioItem {
+export interface IProject extends IPortfolioItem {
     readonly name: string;
     readonly role: string;
     readonly links: ILink[];

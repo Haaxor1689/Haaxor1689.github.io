@@ -11,3 +11,16 @@ main {
 .section {
     margin-bottom: 48px;
 }
+
+.date-range {
+    @extend .text-muted;
+    font-weight: 600;
+}
+
+.education-degree {
+    font-weight: 500;
+}
+
+.description {
+    margin-top: 12px;
+}

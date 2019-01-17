@@ -34,7 +34,7 @@ export default class Navigation extends React.Component<{ subtitle: string }, { 
                         <Nav vertical>
                             <NavLink href="#">Home</NavLink>
                             <NavLink href="#biography">Biography</NavLink>
-                            <NavLink href="#contacts">Contacts</NavLink>
+                            <NavLink href="#contact">Contact</NavLink>
                         </Nav>
                     </Collapse>
                 )}>

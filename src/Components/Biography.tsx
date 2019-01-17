@@ -9,8 +9,7 @@ import Avatar from "./../Assets/avatar.jpg"
 
 export default class Biography extends React.Component<IBiography> {
     render = (): JSX.Element => (
-        <Col>
-            <SectionTitle title="Biography" id="biography" />
+        <Col xs="12">
             <div className="biography">
                 <img src={Avatar} className="biography-avatar" />
                 <div className="biography-title">{this.props.name}</div>

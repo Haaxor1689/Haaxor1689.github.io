@@ -1,11 +1,11 @@
 {
     "biography": {
         "name": "Maroš Beťko",
-        "email": "betkomaros@gmail.com",
         "headline": "Full-stack developer and game designer",
         "summary": "I'm studying Informatics and Design on Masaryk University in Brno. Game development is one of my biggest passions. In my free time I try to develop my skills in this field, ranging from coding to art development. I have an ongoing game project that I like to develop and expand, and try new ideas on. I like challenges that require creative thinking and solving them inspires and motivates me. I'm thorough and organized and hate shoddy quality work and that is what I want my work to reflect."
     },
     "contacts": {
+        "email": "betkomaros@gmail.com",
         "linkedin": "betkomaros",
         "twitter": "Haaxor1689",
         "stackoverflow": "7216259",
@@ -26,21 +26,8 @@
                 "url": "http://www.kentico.com/",
                 "logo": "kentico"
             },
-            "location": "District Brno-City, Czech Republic",
             "start": "2017-05",
-            "description": "Developing Kentico CMS product."
-        },
-        {
-            "title": "iOS App Developer",
-            "company": {
-                "name": "Master App",
-                "url": "https://www.masterapp.cz/",
-                "logo": "master"
-            },
-            "location": "District Brno-City, Czech Republic",
-            "start": "2017-05",
-            "end": "2018-06",
-            "description": "Programming and designing new apps for iOS in Swift and Objective-C Languageuage."
+            "description": "Full-stack developer in team working on Kentico EMS. Development in ASP.NET MVC, TypeScript, Redux, Vue."
         },
         {
             "title": "Undergraduate Teaching Assistant",
@@ -49,9 +36,19 @@
                 "url": "https://www.fi.muni.cz/",
                 "logo": "muni"
             },
-            "location": "District Brno-City, Czech Republic",
             "start": "2017-06",
             "description": "I assist on course PB161 C++ Programming and PV112 Computer Graphics API in preparation of programming assignments, help students during seminars, answer their questions and score and give feedback on major course assignments."
+        },
+        {
+            "title": "iOS App Developer",
+            "company": {
+                "name": "Master App",
+                "url": "https://www.masterapp.cz/",
+                "logo": "master"
+            },
+            "start": "2017-05",
+            "end": "2018-06",
+            "description": "Programming and designing new apps for iOS in Swift and Objective-C Languageuage."
         },
         {
             "title": "DTP Specialist",
@@ -60,7 +57,6 @@
                 "url": "https://www.moravia.com/",
                 "logo": "moravia"
             },
-            "location": "District Brno-City, Czech Republic",
             "start": "2015-10",
             "end": "2017-05",
             "description": "Preparing images, documents or presentations for translations to multiple Languageuages. Fixing and finalizing complete translated materials."
@@ -72,7 +68,6 @@
                 "url": "https://www.ceitec.eu/",
                 "logo": "ceitec"
             },
-            "location": "District Brno-City, Czech Republic",
             "start": "2015-12",
             "end": "2015-02",
             "description": "Closed beta testing of application for renting of various science equipment and labs."
@@ -103,7 +98,7 @@
     "skills": [
         {
             "field": "Programming",
-            "description": "My preffered Languageuage of choice is C++, which I've spent most time coding in. Other Languageuages I use are Swift and Objective-c as an iOS developer and C# in my Unity projects at school. I have worked with frameworks such as QT, Unity and OpenGL."
+            "description": "My two most preferred languages are C++ and C#. Profesionally I've been developing mostly in C# and TypeScript and previously also in Swift. I also have experience with Unity engine, which I use for development in school and hobby projects."
         },
         {
             "field": "Graphics Design",
@@ -111,7 +106,7 @@
         },
         {
             "field": "Versioning and Collaboration",
-            "description": "I use Git daily and also have experience with various git workflows I used either in work or in group projects at school."
+            "description": "I use Git daily and also have experience with various git workflows I used either in work or in group projects at school. I also used TFS (but I would rather not any more)."
         }
     ],
     "projects": [
