@@ -1,11 +1,9 @@
 import React from 'react';
 import { Col, } from 'reactstrap';
-import SectionTitle from './SectionTitle';
-import './Biography.scss'
-
-import { IBiography } from "./../Model/IPortfolio"
 
 import Avatar from "./../Assets/avatar.jpg"
+
+import { IBiography } from "./../Model/IPortfolio"
 
 export default class Biography extends React.Component<IBiography> {
     render = (): JSX.Element => (

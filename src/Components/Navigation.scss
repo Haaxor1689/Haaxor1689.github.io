@@ -1,5 +1,3 @@
-@import "node_modules/bootstrap/scss/bootstrap";
-
 header {
     @extend .bg-light;
     height: 100%;
@@ -23,7 +21,7 @@ header {
 
     .nav-button {
         @extend .d-block;
-        @extend .d-sm-none;
+        @extend .d-md-none;
         position: absolute;
         top: 12px;
         right: 12px;

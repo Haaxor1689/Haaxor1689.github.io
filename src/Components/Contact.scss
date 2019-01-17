@@ -1,2 +1,12 @@
-@import "node_modules/bootstrap/scss/bootstrap";
+.social {
+    @extend .text-primary;
+    @extend .text-center;
+    margin-bottom: 24px;
 
+    .social-link {
+        display: block;
+        font-weight: 600;
+        word-break: break-word;
+        text-decoration: underline;
+    }
+}

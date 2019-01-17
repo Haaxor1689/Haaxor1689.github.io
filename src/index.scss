@@ -1,7 +1,16 @@
+@import './overrides';
+
 @import "node_modules/bootstrap/scss/bootstrap";
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+@import './Components/Biography.scss';
+@import './Components/CompanyItem';
+@import './Components/Contact';
+@import './Components/Navigation';
+@import './Components/SectionTitle';
+@import './Components/Skill';
+
+html {
+    scroll-behavior: smooth;
 }
 
 main {

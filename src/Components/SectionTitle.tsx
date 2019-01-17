@@ -1,5 +1,4 @@
 import React from 'react';
-import './SectionTitle.scss'
 import { Col } from 'reactstrap';
 
 export default class SectionTitle extends React.Component<{ title: string, id?: string }> {

@@ -1,8 +1,6 @@
 import React from 'react';
 import Col from 'reactstrap/lib/Col';
 
-import './Skill.scss';
-
 import { ISkill } from './../Model/IPortfolio'
 
 export default class Experience extends React.Component<ISkill> {

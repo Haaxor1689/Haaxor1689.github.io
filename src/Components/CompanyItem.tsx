@@ -1,8 +1,7 @@
 import React from 'react';
-import './CompanyItem.scss';
+import { Media } from 'reactstrap';
 
 import { ICompany } from '../Model/IPortfolio'
-import Media from 'reactstrap/lib/Media';
 
 interface ICompanyItemProps extends ICompany {
     body: JSX.Element;

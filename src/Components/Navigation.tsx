@@ -1,8 +1,6 @@
 import React from 'react';
-import ResizeDetector from 'react-resize-detector';
 import { Nav, NavLink, Collapse, Button, } from 'reactstrap';
-
-import './Navigation.scss';
+import ResizeDetector from 'react-resize-detector';
 
 
 export default class Navigation extends React.Component<{ subtitle: string }, { isOpen: boolean }> {
@@ -11,7 +9,7 @@ export default class Navigation extends React.Component<{ subtitle: string }, { 
     }
 
     private show = (width: number): boolean => {
-        return width > 576 || this.state.isOpen;
+        return width > 768 || this.state.isOpen;
     }
 
     private toggleNav = () => {
@@ -28,11 +26,11 @@ export default class Navigation extends React.Component<{ subtitle: string }, { 
                     <div className="header-title">Portfolio</div>
                     <div className="header-subtitle">{this.props.subtitle}</div>
                 </div>
-                <Button color="secondary" className="nav-button" onClick={this.toggleNav}>Menu</Button>
+                <Button color="primary" className="nav-button" onClick={this.toggleNav}>Menu</Button>
                 <ResizeDetector handleWidth resizableElementId="root" render={({width, height}) => (
                     <Collapse isOpen={this.show(width)} className="header-nav">
                         <Nav vertical>
-                            <NavLink href="#">Home</NavLink>
+                            <NavLink href="#root">Home</NavLink>
                             <NavLink href="#biography">Biography</NavLink>
                             <NavLink href="#contact">Contact</NavLink>
                         </Nav>

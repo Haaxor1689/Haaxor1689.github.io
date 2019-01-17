@@ -1,9 +1,6 @@
 import React from 'react';
 import { Row, Col, } from 'reactstrap';
 
-import { IPortfolio } from "./../Model/IPortfolio"
-import PortfolioJSON from "./../Data/portfolio.json"
-
 import Navigation from './Navigation';
 import Biography from './Biography';
 import Experience from './Experience';
@@ -11,6 +8,9 @@ import Education from './Education';
 import SectionTitle from './SectionTitle';
 import Skill from './Skill';
 import Contact from './Contact';
+
+import { IPortfolio } from "./../Model/IPortfolio"
+import PortfolioJSON from "./../Data/portfolio.json"
 
 interface IAppState {
     portfolio: IPortfolio;
@@ -36,10 +36,10 @@ export default class App extends React.Component<{}, IAppState> {
 
     render = (): JSX.Element => (
         <Row noGutters>
-            <Col sm="auto" className="sticky-top">
+            <Col md="auto" className="sticky-top">
                 <Navigation subtitle={this.state.portfolio.biography.name} />
             </Col>
-            <Col sm>
+            <Col md>
                 <main>
                     <Row className="section">
                         <SectionTitle title="Biography" id="biography" />
