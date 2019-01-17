@@ -1,0 +1,10 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.section-title {
+    @extend .text-center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    width: 256px;
+    margin: 0 auto;
+}

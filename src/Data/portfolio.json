@@ -24,7 +24,7 @@
             "company": {
                 "name": "Kentico Software",
                 "url": "http://www.kentico.com/",
-                "logo": "img/logo/kentico.png"
+                "logo": "kentico"
             },
             "location": "District Brno-City, Czech Republic",
             "start": "2017-05",
@@ -35,7 +35,7 @@
             "company": {
                 "name": "Master App",
                 "url": "https://www.masterapp.cz/",
-                "logo": "img/logo/master.png"
+                "logo": "master"
             },
             "location": "District Brno-City, Czech Republic",
             "start": "2017-05",
@@ -47,7 +47,7 @@
             "company": {
                 "name": "Masaryk University Brno",
                 "url": "https://www.fi.muni.cz/",
-                "logo": "img/logo/muni.png"
+                "logo": "muni"
             },
             "location": "District Brno-City, Czech Republic",
             "start": "2017-06",
@@ -58,7 +58,7 @@
             "company": {
                 "name": "Moravia",
                 "url": "https://www.moravia.com/",
-                "logo": "img/logo/moravia.png"
+                "logo": "moravia"
             },
             "location": "District Brno-City, Czech Republic",
             "start": "2015-10",
@@ -70,7 +70,7 @@
             "company": {
                 "name": "CEITEC - Central European Institute of Technology",
                 "url": "https://www.ceitec.eu/",
-                "logo": "img/logo/ceitec.png"
+                "logo": "ceitec"
             },
             "location": "District Brno-City, Czech Republic",
             "start": "2015-12",
@@ -81,21 +81,19 @@
     "education": [
         {
             "school": {
-                "logo": "img/logo/muni.png",
+                "name": "Masaryk University Brno",
                 "url": "https://www.fi.muni.cz/",
-                "title": "Masaryk University Brno"
+                "logo": "muni"
             },
             "degree": "Bc.",
-            "field": {
-                "url": "https://obory.fi.muni.cz/bc/aplikovana-informatika#spec",
-                "title": "Applied Informatics and Graphic Design"
-            },
+            "field":  "Applied Informatics and Graphic Design",
             "start": "2015"
         },
         {
             "school": {
-                "logo": "img/logo/gjgt.png",
-                "title": "Gymnasium of Jozef Gregor Tajovský, Banská Bystrica"
+                "name": "Gymnasium of Jozef Gregor Tajovský, Banská Bystrica",
+                "url": "http://www.gjgt.sk/",
+                "logo": "gjgt"
             },
             "field": "Mathematics",
             "start": "2011",

@@ -1,0 +1,30 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.biography {
+    @extend .text-center;
+    padding: 24px 0;
+    width: 100%;
+
+    .biography-avatar {
+        @extend .rounded-circle;
+        width: 150px;
+        margin-bottom: 24px;
+    }
+
+    .biography-title {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .biography-headline {
+        @extend .text-muted;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+}
+    
+.biography-summary {
+    @extend .text-muted;
+    padding: 0 24px;
+}

@@ -1,0 +1,35 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+header {
+    @extend .bg-light;
+    height: 100%;
+
+    .header-brand {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+
+        .header-title {
+            font-size: 24px;
+            font-weight: 800;
+            padding-right: 12px;
+        }
+    
+        .header-subtitle {
+            @extend .text-muted;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    .nav-button {
+        @extend .d-block;
+        @extend .d-sm-none;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+
+    .header-nav {
+        margin-bottom: 12px;
+    }
+}
