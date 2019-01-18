@@ -15,6 +15,7 @@ html {
 }
 
 main {
+    @extend .bg-light;
     padding: 0 24px;
 }
 

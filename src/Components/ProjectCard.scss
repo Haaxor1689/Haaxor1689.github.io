@@ -1,6 +1,4 @@
 .project-card {
-    @extend .rounded-0;
-
     cursor: pointer;
     border: 0;
     width: 256px;
@@ -40,6 +38,7 @@
         height: 100%;
         font-size: 32px;
         opacity: 0;
+        padding: 0 32px;
     }
 
     .project-card-close {
@@ -64,6 +63,8 @@
 .project-card-open {
     margin: 0;
     width: unset;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 
     .project-card-overlay {
         opacity: 0.3;
