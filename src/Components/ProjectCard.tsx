@@ -33,7 +33,9 @@ export default class ProjectCard extends React.Component<IProject, IProjectCardS
         }));
     }
 
-    private getPreview = (): string => this.props.preview ? `${process.env.PUBLIC_URL}/Assets/Projects/${this.props.preview}.png` : `${process.env.PUBLIC_URL}/Assets/Projects/Clock.png` 
+    private urlPrefix = `${process.env.PUBLIC_URL}/Assets/Projects/`;
+
+    private getPreview = (): string => this.props.preview ? this.urlPrefix + this.props.preview : `${this.urlPrefix}Clock.png` 
 
     private renderLink = (link: ILink): JSX.Element => <li><a href={link.url}>{link.title}</a></li>
 
@@ -44,11 +46,21 @@ export default class ProjectCard extends React.Component<IProject, IProjectCardS
         </Col>
     )
 
+    private renderImage = (link: ILink): JSX.Element => <Col><img src={this.urlPrefix + link.url} alt={link.title} className="project-card-image" /></Col>
+
+    private renderImages = (): JSX.Element => (
+        <Col className="w-100">
+            <Row className="justify-content-around">
+                {this.props.images!.map(this.renderImage)}
+            </Row>
+        </Col>
+    )
+
     render = (): JSX.Element => (
         <Col xs={this.state.size}>
             <Card className={`project-card ${this.isOpen() && "project-card-open"}`} onClick={this.toggleNav}>
-                <div>
-                    <CardImg top src={this.getPreview()} alt="Card image cap" className="project-card-image" />
+                <div className="project-card-preview-container">
+                    <CardImg top src={this.getPreview()} alt="Card image cap" className="project-card-preview" />
                 </div>
                 <div className="project-card-overlay"></div>
                 <Row noGutters className="project-card-text">
@@ -65,6 +77,7 @@ export default class ProjectCard extends React.Component<IProject, IProjectCardS
                         <div>{this.props.description}</div>
                     </Col>
                     { this.props.links && this.renderLinks() }
+                    { this.props.images && this.renderImages() }
                 </Row>
             </Collapse>
         </Col>

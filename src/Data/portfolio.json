@@ -24,7 +24,7 @@
             "company": {
                 "name": "Kentico Software",
                 "url": "http://www.kentico.com/",
-                "logo": "kentico"
+                "logo": "kentico.png"
             },
             "start": "2017-05",
             "description": "Full-stack developer in team working on Kentico EMS. Development in ASP.NET MVC, TypeScript, Redux, Vue."
@@ -34,7 +34,7 @@
             "company": {
                 "name": "Masaryk University Brno",
                 "url": "https://www.fi.muni.cz/",
-                "logo": "muni"
+                "logo": "muni.png"
             },
             "start": "2017-06",
             "description": "I assist on course PB161 C++ Programming and PV112 Computer Graphics API in preparation of programming assignments, help students during seminars, answer their questions and score and give feedback on major course assignments."
@@ -44,7 +44,7 @@
             "company": {
                 "name": "Master App",
                 "url": "https://www.masterapp.cz/",
-                "logo": "master"
+                "logo": "master.png"
             },
             "start": "2017-05",
             "end": "2018-06",
@@ -55,7 +55,7 @@
             "company": {
                 "name": "Moravia",
                 "url": "https://www.moravia.com/",
-                "logo": "moravia"
+                "logo": "moravia.png"
             },
             "start": "2015-10",
             "end": "2017-05",
@@ -66,7 +66,7 @@
             "company": {
                 "name": "CEITEC - Central European Institute of Technology",
                 "url": "https://www.ceitec.eu/",
-                "logo": "ceitec"
+                "logo": "ceitec.png"
             },
             "start": "2015-12",
             "end": "2015-02",
@@ -78,7 +78,7 @@
             "school": {
                 "name": "Masaryk University Brno",
                 "url": "https://www.fi.muni.cz/",
-                "logo": "muni"
+                "logo": "muni.png"
             },
             "degree": "Bc.",
             "field":  "Applied Informatics and Graphic Design",
@@ -88,7 +88,7 @@
             "school": {
                 "name": "Gymnasium of Jozef Gregor Tajovský, Banská Bystrica",
                 "url": "http://www.gjgt.sk/",
-                "logo": "gjgt"
+                "logo": "gjgt.png"
             },
             "field": "Mathematics",
             "start": "2011",
@@ -163,6 +163,17 @@
             "end": "2017-08",
             "role": "Designer, Programmer and Artist",
             "description": "A Tetris game, written in custom built engine with the use of C++ and SDL2 library.",
+            "preview": "Tetris/Menu.png",
+            "images": [
+                {
+                    "url": "Tetris/Menu.png",
+                    "title": "Menu screen"
+                },
+                {
+                    "url": "Tetris/Game.png",
+                    "title": "Game"
+                }
+            ],
             "links": [
                 {
                     "url": "https://haaxor.itch.io/tetris",
