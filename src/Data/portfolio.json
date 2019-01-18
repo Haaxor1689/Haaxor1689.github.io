@@ -154,6 +154,7 @@
             "end": "2018-08",
             "role": "Programmer",
             "description": "Interpreter with custom syntax written in C++.",
+            "preview": "Interpreter.png",
             "links": [
                 {
                     "url": "https://github.com/Haaxor1689/Interpreter",
@@ -168,6 +169,7 @@
             "end": "2018-06",
             "role": "Programmer",
             "description": "Tool for creating portfolio saved in XML format, with multiple export options.",
+            "preview": "PortfolioBuilder.png",
             "links": [
                 {
                     "url": "https://haaxor1689.github.io/PortfolioBuilder/",
@@ -185,8 +187,9 @@
             "start": "2018-01",
             "end": "2018-06",
             "role": "Programmer",
-            "description": "3D breakout game on a circular game area with custom collision detection, made with OpenGL and C++.",
-            "lnks": [
+            "description": "Implementation of collision detection algorith used in 3D breakout game. Game is situated on circular play area, with bricks in the middle and 3 paddles around the side. Player can rotate the paddles in order to destroy all teh bricks in the middle. Implementation was done in OpenGL and C++ with the use of custom geometric classes.",
+            "preview": "CollisionDetection.png",
+            "links": [
                 {
                     "url": "https://github.com/Haaxor1689/CollisionDetection",
                     "title": "Source on Github"
