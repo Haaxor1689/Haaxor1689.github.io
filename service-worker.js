@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://haaxor1689.github.io/precache-manifest.0823b66b66b9485276bd146cfef56950.js"
+  "//haaxor1689.github.io/precache-manifest.3b524e6e1f602a1447afe0f3a6df49c3.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("https://haaxor1689.github.io/index.html", {
+workbox.routing.registerNavigationRoute("//haaxor1689.github.io/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

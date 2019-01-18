@@ -1,14 +1,14 @@
 {
-  "main.css": "https://haaxor1689.github.io/static/css/main.4ed2f334.chunk.css",
-  "main.js": "https://haaxor1689.github.io/static/js/main.98b9d730.chunk.js",
-  "main.js.map": "https://haaxor1689.github.io/static/js/main.98b9d730.chunk.js.map",
-  "static/js/1.8c38100e.chunk.js": "https://haaxor1689.github.io/static/js/1.8c38100e.chunk.js",
-  "static/js/1.8c38100e.chunk.js.map": "https://haaxor1689.github.io/static/js/1.8c38100e.chunk.js.map",
-  "runtime~main.js": "https://haaxor1689.github.io/static/js/runtime~main.2fd6befa.js",
-  "runtime~main.js.map": "https://haaxor1689.github.io/static/js/runtime~main.2fd6befa.js.map",
-  "static/media/avatar.jpg": "https://haaxor1689.github.io/static/media/avatar.fe5d8070.jpg",
-  "static/css/main.4ed2f334.chunk.css.map": "https://haaxor1689.github.io/static/css/main.4ed2f334.chunk.css.map",
-  "index.html": "https://haaxor1689.github.io/index.html",
-  "precache-manifest.0823b66b66b9485276bd146cfef56950.js": "https://haaxor1689.github.io/precache-manifest.0823b66b66b9485276bd146cfef56950.js",
-  "service-worker.js": "https://haaxor1689.github.io/service-worker.js"
+  "main.css": "//haaxor1689.github.io/static/css/main.4ed2f334.chunk.css",
+  "main.js": "//haaxor1689.github.io/static/js/main.fef2cc6e.chunk.js",
+  "main.js.map": "//haaxor1689.github.io/static/js/main.fef2cc6e.chunk.js.map",
+  "static/js/1.8c38100e.chunk.js": "//haaxor1689.github.io/static/js/1.8c38100e.chunk.js",
+  "static/js/1.8c38100e.chunk.js.map": "//haaxor1689.github.io/static/js/1.8c38100e.chunk.js.map",
+  "runtime~main.js": "//haaxor1689.github.io/static/js/runtime~main.4543c403.js",
+  "runtime~main.js.map": "//haaxor1689.github.io/static/js/runtime~main.4543c403.js.map",
+  "static/media/avatar.jpg": "//haaxor1689.github.io/static/media/avatar.fe5d8070.jpg",
+  "static/css/main.4ed2f334.chunk.css.map": "//haaxor1689.github.io/static/css/main.4ed2f334.chunk.css.map",
+  "index.html": "//haaxor1689.github.io/index.html",
+  "precache-manifest.3b524e6e1f602a1447afe0f3a6df49c3.js": "//haaxor1689.github.io/precache-manifest.3b524e6e1f602a1447afe0f3a6df49c3.js",
+  "service-worker.js": "//haaxor1689.github.io/service-worker.js"
 }
