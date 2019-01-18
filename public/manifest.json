@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Portfolio",
+  "name": "Maros Betko's Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,6 +8,7 @@
       "type": "image/x-icon"
     }
   ],
+  "description": "My portfolio page hosted by Github Pages.",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
