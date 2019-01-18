@@ -1,7 +1,11 @@
 import React from 'react';
 import { Row, Col, } from 'reactstrap';
 
+import groupBy from 'lodash.groupby';
+import sortBy from 'lodash.sortby';
+
 import Navigation from './Navigation';
+import ProjectCard from './ProjectCard';
 import Biography from './Biography';
 import Experience from './Experience';
 import Education from './Education';
@@ -9,38 +13,46 @@ import SectionTitle from './SectionTitle';
 import Skill from './Skill';
 import Contact from './Contact';
 
-import { IPortfolio } from "./../Model/IPortfolio"
+import { IPortfolio, IProject } from "./../Model/IPortfolio"
 import PortfolioJSON from "./../Data/portfolio.json"
+
+interface ISectionGroups {
+    [type: string]: IProject[];
+}
 
 interface IAppState {
     portfolio: IPortfolio;
-    navOpen: boolean;
+    filteredProjects: ISectionGroups;
 }
 
 export default class App extends React.Component<{}, IAppState> {
     public state: IAppState = {
         portfolio: PortfolioJSON,
-        navOpen: true,
+        filteredProjects: groupBy(sortBy(PortfolioJSON.projects, 'type'), 'type'),
     };
 
-    private showNav = (): boolean => {
-        return this.state.navOpen;
-    }
+    private toAnchor = (name: string): string => name.replace(/ /g, '_').toLowerCase();
 
-    private toggleNav = () => {
-        this.setState((prevState) => ({
-            ...prevState,
-            navOpen: !prevState.navOpen,
-        }));
-    }
+    private getSections = () => Object.keys(this.state.filteredProjects).map((type) => ({
+        name: type,
+        anchor: this.toAnchor(type),
+    }));
+
+    private renderSection = (type: string, projects: IProject[]): JSX.Element => (
+        <Row className="section">
+            <SectionTitle title={type} id={this.toAnchor(type)} />
+            { projects.map((project) => <ProjectCard { ...project } />)}
+        </Row>
+    );
 
     render = (): JSX.Element => (
         <Row noGutters>
             <Col md="auto" className="sticky-top">
-                <Navigation subtitle={this.state.portfolio.biography.name} />
+                <Navigation subtitle={this.state.portfolio.biography.name} sections={this.getSections()} />
             </Col>
             <Col md>
                 <main>
+                    { Object.entries(this.state.filteredProjects).map((entry) => this.renderSection(entry[0], entry[1])) }
                     <Row className="section">
                         <SectionTitle title="Biography" id="biography" />
                         <Biography {...this.state.portfolio.biography} />

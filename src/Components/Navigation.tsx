@@ -2,8 +2,12 @@ import React from 'react';
 import { Nav, NavLink, Collapse, Button, } from 'reactstrap';
 import ResizeDetector from 'react-resize-detector';
 
+interface INavigationProps {
+    subtitle: string;
+    sections: { name: string, anchor: string }[];
+}
 
-export default class Navigation extends React.Component<{ subtitle: string }, { isOpen: boolean }> {
+export default class Navigation extends React.Component<INavigationProps, { isOpen: boolean }> {
     state = {
         isOpen: false,
     }
@@ -22,15 +26,18 @@ export default class Navigation extends React.Component<{ subtitle: string }, { 
     render = (): JSX.Element => (
         <header>
             <div className="sticky-top">
-                <div className="header-brand">
-                    <div className="header-title">Portfolio</div>
-                    <div className="header-subtitle">{this.props.subtitle}</div>
+                <div className="nav-brand">
+                    <div className="nav-title">Portfolio</div>
+                    <div className="nav-subtitle">{this.props.subtitle}</div>
                 </div>
                 <Button color="primary" className="nav-button" onClick={this.toggleNav}>Menu</Button>
                 <ResizeDetector handleWidth resizableElementId="root" render={({width, height}) => (
-                    <Collapse isOpen={this.show(width)} className="header-nav">
+                    <Collapse isOpen={this.show(width)} className="nav-list">
                         <Nav vertical>
                             <NavLink href="#root">Home</NavLink>
+                            <div className="nav-sections">
+                            { this.props.sections.map((section) => <NavLink href={`#${section.anchor}`}>{section.name}</NavLink>)}
+                            </div>
                             <NavLink href="#biography">Biography</NavLink>
                             <NavLink href="#contact">Contact</NavLink>
                         </Nav>

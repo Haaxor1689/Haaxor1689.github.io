@@ -111,6 +111,7 @@
     ],
     "projects": [
         {
+            "type": "Other",
             "name": "Interpreter",
             "start": "2018-01",
             "end": "2018-08",
@@ -124,6 +125,7 @@
             ]
         },
         {
+            "type": "Web apps",
             "name": "Portfolio builder",
             "start": "2018-01",
             "end": "2018-06",
@@ -141,6 +143,7 @@
             ]
         },
         {
+            "type": "Other",
             "name": "Collision detection simulation",
             "start": "2018-01",
             "end": "2018-06",
@@ -154,6 +157,7 @@
             ]
         },
         {
+            "type": "Games",
             "name": "Tetris",
             "start": "2017-01",
             "end": "2017-08",
@@ -171,8 +175,8 @@
             ]
         },
         {
-            "name": "Your Evilness",
-            "Type": "Prototype",
+            "type": "Games",
+            "name": "Your Evilness [prototype]",
             "start": "2016-07",
             "end": "2016-10",
             "role": "Designer, Programmer and Artist",

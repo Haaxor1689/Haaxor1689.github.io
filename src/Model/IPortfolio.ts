@@ -20,7 +20,7 @@ export interface IContacts {
     readonly stackoverflow?: string;
     readonly github?: string;
     readonly pinterest?: string;
-    readonly links: ILink[];
+    readonly links?: ILink[];
 }
 
 export interface IPortfolioItem {
@@ -41,9 +41,12 @@ export interface IEducation extends IPortfolioItem {
 }
 
 export interface IProject extends IPortfolioItem {
+    readonly type: string;
     readonly name: string;
     readonly role: string;
-    readonly links: ILink[];
+    readonly preview?: string;
+    readonly images?: ILink[];
+    readonly links?: ILink[];
 }
 
 export interface ISkill {
