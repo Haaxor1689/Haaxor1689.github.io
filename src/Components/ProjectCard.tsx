@@ -41,12 +41,12 @@ export default class ProjectCard extends React.Component<IProject, IProjectCardS
 
     private renderLinks = (): JSX.Element => (
         <Col lg="3">
-            <p>Links:</p>
+            <strong>Links:</strong>
             <ul>{this.props.links!.map(this.renderLink)}</ul>
         </Col>
     )
 
-    private renderImage = (link: ILink): JSX.Element => <Col><img src={this.urlPrefix + link.url} alt={link.title} className="project-card-image" /></Col>
+    private renderImage = (link: ILink): JSX.Element => <Col><img src={this.urlPrefix + link.url} alt={link.title} title={link.title} className="project-card-image" /></Col>
 
     private renderImages = (): JSX.Element => (
         <Col className="w-100">
@@ -74,7 +74,7 @@ export default class ProjectCard extends React.Component<IProject, IProjectCardS
                     <Col lg={ this.props.links ? "9" : "12"}>
                         <DateRange start={this.props.start} end={this.props.end} />
                         <div><strong>My role:</strong> {this.props.role}</div>
-                        <div>{this.props.description}</div>
+                        <div className="project-card-description">{this.props.description}</div>
                     </Col>
                     { this.props.links && this.renderLinks() }
                     { this.props.images && this.renderImages() }

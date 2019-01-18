@@ -87,9 +87,15 @@
     margin: 0;
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
+
+    .project-card-description {
+        padding: 24px 0;
+    }
 }
 
 .project-card-image {
     width: 100%;
+    min-width: 256px;
     image-rendering: pixelated;
+    padding-top: 12px;
 }
