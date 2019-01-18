@@ -111,7 +111,7 @@
     ],
     "projects": [
         {
-            "type": "Other",
+            "type": "Programming",
             "name": "Interpreter",
             "start": "2018-01",
             "end": "2018-08",
@@ -143,7 +143,7 @@
             ]
         },
         {
-            "type": "Other",
+            "type": "Programming",
             "name": "Collision detection simulation",
             "start": "2018-01",
             "end": "2018-06",
@@ -184,7 +184,7 @@
             "links": [
                 {
                     "url": "http://steamcommunity.com/sharedfiles/filedetails/?id=691919823",
-                    "title": "Steam Workshop link"
+                    "title": "Steam Workshop"
                 }
             ]
         }

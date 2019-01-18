@@ -54,7 +54,7 @@ export interface ISkill {
     description: string;
 }
 
-interface ILink {
+export interface ILink {
     readonly title: string;
     readonly url: string;
 }

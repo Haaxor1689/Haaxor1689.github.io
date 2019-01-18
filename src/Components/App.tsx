@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, } from 'reactstrap';
+import { Row, Col, Button, } from 'reactstrap';
 
 import groupBy from 'lodash.groupby';
 import sortBy from 'lodash.sortby';
@@ -39,7 +39,7 @@ export default class App extends React.Component<{}, IAppState> {
     }));
 
     private renderSection = (type: string, projects: IProject[]): JSX.Element => (
-        <Row className="section">
+        <Row className="section justify-content-center" noGutters>
             <SectionTitle title={type} id={this.toAnchor(type)} />
             { projects.map((project) => <ProjectCard { ...project } />)}
         </Row>

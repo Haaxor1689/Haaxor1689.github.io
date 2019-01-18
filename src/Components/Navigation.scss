@@ -1,8 +1,10 @@
 header {
-    @extend .bg-light;
+    @extend .bg-dark;
     height: 100%;
 
     .nav-brand {
+        @extend .text-light;
+
         display: inline-block;
         padding: 0.5rem 1rem;
 
@@ -19,6 +21,10 @@ header {
         }
     }
 
+    .nav-brand:hover {
+        text-decoration: none;
+    }
+
     .nav-button {
         @extend .d-block;
         @extend .d-md-none;
@@ -32,6 +38,7 @@ header {
 
         .nav-link {
             padding-top: 0;
+            font-weight: 700;
         }
 
         .nav-sections {
