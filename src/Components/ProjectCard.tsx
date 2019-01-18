@@ -4,17 +4,32 @@ import { Col, Card, CardImg, Row, Collapse } from 'reactstrap';
 import { IProject, ILink } from './../Model/IPortfolio'
 import DateRange from './DateRange';
 
-export default class ProjectCard extends React.Component<IProject, { isOpen: boolean, size: "auto" | "12" }> {
-    state = {
+interface IProjectCardState {
+    isOpen: boolean,
+    size: "auto" | "12",
+}
+
+export default class ProjectCard extends React.Component<IProject, IProjectCardState> {
+    state: IProjectCardState = {
         isOpen: false,
-        size: "auto" as "auto",
+        size: "auto",
     }
+
+    private isOpen = (): boolean => this.state.isOpen || this.state.size === "12";
 
     private toggleNav = () => {
         this.setState((prevState) => ({
             ...prevState,
             isOpen: !prevState.isOpen,
-            size: prevState.size === "auto" ? "12" : "auto",
+            size: !prevState.isOpen ? "12" : prevState.size,
+        }));
+    }
+
+    private onExited = () => {
+        console.log('closed');
+        this.setState((prevState) => ({
+            ...prevState,
+            size: "auto",
         }));
     }
 
@@ -31,7 +46,7 @@ export default class ProjectCard extends React.Component<IProject, { isOpen: boo
 
     render = (): JSX.Element => (
         <Col xs={this.state.size}>
-            <Card className={`project-card ${this.state.isOpen && "project-card-open"}`} onClick={this.toggleNav}>
+            <Card className={`project-card ${this.isOpen() && "project-card-open"}`} onClick={this.toggleNav}>
                 <div>
                     <CardImg top src={this.getPreview()} alt="Card image cap" className="project-card-image" />
                 </div>
@@ -42,7 +57,7 @@ export default class ProjectCard extends React.Component<IProject, { isOpen: boo
                     </Col>
                 </Row>
             </Card>
-            <Collapse isOpen={this.state.isOpen}>
+            <Collapse isOpen={this.state.isOpen} onExited={this.onExited}>
                 <Row className="project-card-body">
                     <Col lg={ this.props.links ? "9" : "12"}>
                         <DateRange start={this.props.start} end={this.props.end} />
