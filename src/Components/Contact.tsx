@@ -8,11 +8,18 @@ import { faLinkedin, faTwitter, faStackOverflow, faGithub, faPinterest } from '@
 import { IContacts } from './../Model/IPortfolio'
 
 export default class Contact extends React.Component<IContacts> {
-    private renderSocial = (text: string, url: string, icon: IconDefinition): JSX.Element => (
-        <Col xs="4" className="social">
+    private renderSocial = (text: string, url: string, icon: IconDefinition): JSX.Element => this.renderBase(<div>{text}</div>, url, icon);
+
+    private renderEmail = (text: string, url: string, icon: IconDefinition): JSX.Element => {
+        const parts = text.split('@');
+        return this.renderBase(<div>{parts[0]}<wbr />@{parts[1]}</div>, url, icon);
+    }
+
+    private renderBase = (text: JSX.Element, url: string, icon: IconDefinition): JSX.Element => (
+        <Col sm="4" xs="6" className="social">
             <a href={url} className="social-link">
                 <FontAwesomeIcon icon={icon} size="4x" />
-                <div>{text}</div>
+                {text}
             </a>
         </Col>
     )
@@ -20,7 +27,7 @@ export default class Contact extends React.Component<IContacts> {
     render = (): JSX.Element => (
         <Col>
             <Row>
-                { this.props.email && this.renderSocial(this.props.email, `email://${this.props.linkedin}/`, faAt)}
+                { this.props.email && this.renderEmail(this.props.email, `mailto:${this.props.linkedin}`, faAt)}
                 { this.props.linkedin && this.renderSocial(`in\\${this.props.linkedin}`, `https://www.linkedin.com/in/${this.props.linkedin}/`, faLinkedin)}
                 { this.props.twitter && this.renderSocial(`@${this.props.twitter}`, `https://twitter.com/${this.props.twitter}`, faTwitter)}
                 { this.props.stackoverflow && this.renderSocial('StackOverflow', `https://stackoverflow.com/users/${this.props.stackoverflow}`, faStackOverflow)}
