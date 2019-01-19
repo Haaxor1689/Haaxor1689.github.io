@@ -81,7 +81,7 @@
                 "logo": "muni.png"
             },
             "degree": "Bc.",
-            "field":  "Applied Informatics and Graphic Design",
+            "field": "Applied Informatics and Graphic Design",
             "start": "2015"
         },
         {
@@ -111,7 +111,7 @@
     ],
     "projects": [
         {
-            "type": "Web apps",
+            "type": "Programming",
             "name": "One life item browser",
             "start": "2018-11",
             "role": "Programmer",
@@ -124,6 +124,47 @@
                 },
                 {
                     "url": "https://github.com/Haaxor1689/OneLifeItemBrowser",
+                    "title": "Source on Github"
+                }
+            ]
+        },
+        {
+            "type": "Design",
+            "name": "Pixel Monastery Script",
+            "start": "2017-06",
+            "end": "2018-01",
+            "role": "Designer",
+            "description": "Pixel Monastery Script is a blackletter pixel font. It's aim is to faithfully transfer elegance of medieval handwritten scripts into the limited space of pixel art. It was made for use in medieval and fantasy pixel art and games and is drawn in a strict pixel grid with default height of 30 pixels. With this size, it's best suited to be used for titles, but with higher fidelity pixelart, it also fits as a paragraph font. With OpenType features enabled, all numbers are typeset in proper roman numeral format up to millions.",
+            "preview": "PixelMonasteryScript/Galery02.png",
+            "images": [
+                {
+                    "url": "PixelMonasteryScript/Galery03.png",
+                    "title": "Medieval book page"
+                },
+                {
+                    "url": "PixelMonasteryScript/Galery05.png",
+                    "title": "Roman numerals"
+                },
+                {
+                    "url": "PixelMonasteryScript/Galery04.png",
+                    "title": "Font usage in pixel art game"
+                },
+                {
+                    "url": "PixelMonasteryScript/Galery01.png",
+                    "title": "Usage in title"
+                },
+                {
+                    "url": "PixelMonasteryScript/Galery06.png",
+                    "title": "Simple title"
+                }
+            ],
+            "links": [
+                {
+                    "url": "https://github.com/Haaxor1689/PixelMonasteryScript/blob/master/PixelMonasteryScript.ttf?raw=true",
+                    "title": "Direct download"
+                },
+                {
+                    "url": "https://github.com/Haaxor1689/PixelMonasteryScript",
                     "title": "Source on Github"
                 }
             ]
@@ -181,7 +222,7 @@
             ]
         },
         {
-            "type": "Web apps",
+            "type": "Programming",
             "name": "Portfolio builder",
             "start": "2018-01",
             "end": "2018-06",
@@ -240,6 +281,27 @@
                 {
                     "url": "https://github.com/Haaxor1689/Tetris",
                     "title": "Source on Github"
+                }
+            ]
+        },
+        {
+            "type": "Games",
+            "name": "Time Is Running Out",
+            "start": "2016-09",
+            "end": "2016-09",
+            "role": "Designer, Programmer and Artist",
+            "description": "Small game project for Ludum Dare Mini 70 completed in less than a month from scratch. Theme of the competition was to create a game without any random elements to it. Point of the game was to manage up to 9 cities by deciding what state they should be in to positively affect each other. Main task for player is to find out what each state does and come up with a tactic for each level on how to obtain the most points possible. Created with Game Maker.",
+            "preview": "TimeIsRunningOut/Title.png",
+            "images": [
+                {
+                    "url": "TimeIsRunningOut/Game.png",
+                    "title": "Game"
+                }
+            ],
+            "links": [
+                {
+                    "url": "https://www.newgrounds.com/portal/view/681873",
+                    "title": "Newgrounds page"
                 }
             ]
         },
