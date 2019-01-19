@@ -111,6 +111,24 @@
     ],
     "projects": [
         {
+            "type": "Web apps",
+            "name": "One life item browser",
+            "start": "2018-11",
+            "role": "Programmer",
+            "description": "One hour one life is a unique game that contains hundreds of items and even more options of combining them. This project aims to visualize the database of all items and their combination possibilities. Content of this page is populated directly from the public data repository (https://github.com/jasonrohrer/OneLifeData7) of the game's publisher.",
+            "preview": "OneLifeItemBrowser.png",
+            "links": [
+                {
+                    "url": "https://haaxor1689.github.io/OneLifeItemBrowser",
+                    "title": "Live page"
+                },
+                {
+                    "url": "https://github.com/Haaxor1689/OneLifeItemBrowser",
+                    "title": "Source on Github"
+                }
+            ]
+        },
+        {
             "type": "Games",
             "name": "The Early Academic Expeditions of Randolph T. Lewis Jr.",
             "start": "2018-04",
