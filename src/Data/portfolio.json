@@ -307,11 +307,26 @@
         },
         {
             "type": "Games",
-            "name": "Your Evilness [prototype]",
+            "name": "Your Evilness",
             "start": "2016-07",
             "end": "2016-10",
             "role": "Designer, Programmer and Artist",
-            "description": "Small passion project of mine, that I worked on to try out game design and programming.",
+            "description": "Assume role of evil cultis, summon imps and wreak havoc. By killing enemies randomly spawned around the map you gain more imps. Game is pretty much just a prototype so expect many bugs.",
+            "preview": "YourEvilness/Preview.png",
+            "images": [
+                {
+                    "url": "YourEvilness/Game03.png",
+                    "title": "Peasants and their sheep"
+                },
+                {
+                    "url": "YourEvilness/Game02.png",
+                    "title": "Cultist commanding his imps"
+                },
+                {
+                    "url": "YourEvilness/Game01.png",
+                    "title": "Imps killing sheep"
+                }
+            ],
             "links": [
                 {
                     "url": "http://steamcommunity.com/sharedfiles/filedetails/?id=691919823",
