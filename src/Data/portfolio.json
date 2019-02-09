@@ -1,7 +1,7 @@
 {
     "biography": {
         "name": "Maroš Beťko",
-        "headline": "Full-stack developer and game designer",
+        "headline": "Front-end developer and game designer",
         "summary": "I'm studying Informatics and Design on Masaryk University in Brno. Game development is one of my biggest passions. In my free time I try to develop my skills in this field, ranging from coding to art development. I have an ongoing game project that I like to develop and expand, and try new ideas on. I like challenges that require creative thinking and solving them inspires and motivates me. I'm thorough and organized and hate shoddy quality work and that is what I want my work to reflect."
     },
     "contacts": {
@@ -20,14 +20,14 @@
     },
     "experience": [
         {
-            "title": "Full-stack developer",
+            "title": "Front-end developer",
             "company": {
-                "name": "Kentico Software",
-                "url": "http://www.kentico.com/",
-                "logo": "kentico.png"
+                "name": "Procedural Design",
+                "url": "https://procedural.design/",
+                "logo": "pdlogo.png"
             },
-            "start": "2017-05",
-            "description": "Full-stack developer in team working on Kentico EMS. Development in ASP.NET MVC, TypeScript, Redux, Vue."
+            "start": "2019-02",
+            "description": "Developing Michelangelo's web editor consisting of 3D preview and C# code parsing and generation."
         },
         {
             "title": "Undergraduate Teaching Assistant",
@@ -40,6 +40,17 @@
             "description": "I assist on course PB161 C++ Programming and PV112 Computer Graphics API in preparation of programming assignments, help students during seminars, answer their questions and score and give feedback on major course assignments."
         },
         {
+            "title": "Full-stack developer",
+            "company": {
+                "name": "Kentico Software",
+                "url": "http://www.kentico.com/",
+                "logo": "kentico.png"
+            },
+            "start": "2018-06",
+            "end": "2019-02",
+            "description": "Full-stack developer in team working on Kentico EMS. Development in ASP.NET MVC, TypeScript, Redux, Vue."
+        },
+        {
             "title": "iOS App Developer",
             "company": {
                 "name": "Master App",
@@ -48,7 +59,7 @@
             },
             "start": "2017-05",
             "end": "2018-06",
-            "description": "Programming and designing new apps for iOS in Swift and Objective-C Languageuage."
+            "description": "Programming and designing new apps for iOS in Swift and Objective-C languages."
         },
         {
             "title": "DTP Specialist",
@@ -110,6 +121,81 @@
         }
     ],
     "projects": [
+        {
+            "type": "Design",
+            "name": "DreamQuest",
+            "start": "2018-11",
+            "role": "Programmer, Designer and Artist",
+            "description": "Dream-Quest is a competitive game for 2-5 players, playable in around two hours. The players assume the role of a dreamer, existing in two different realities at once – the Dream World and the Real World. The Real World represents the repetitive routine of everyday life, that the characters have to endure before going to sleep and continuing their epic quest in the alternate reality.",
+            "preview": "DreamQuest.png",
+            "images": [
+                {
+                    "url": "DreamQuest/CardDescription.png",
+                    "title": "Dream card description"
+                },
+                {
+                    "url": "DreamQuest/CharacterDescription.png",
+                    "title": "Character card description"
+                },
+                {
+                    "url": "DreamQuest/ClockDescription.png",
+                    "title": "Slumber clock description"
+                }
+            ],
+            "links": [
+                {
+                    "url": "https://github.com/Haaxor1689/DreamQuest",
+                    "title": "Source on Github"
+                },
+                {
+                    "url": "https://haaxor1689.github.io/DreamQuest",
+                    "title": "Project's page"
+                }
+            ]
+        },
+        {
+            "type": "Programming",
+            "name": "Michelangelo for Unity",
+            "start": "2018-03",
+            "role": "Programmer",
+            "description": "Unity package that brings Michelangelo procedural modeling to Unity. Create, edit and generate models with Michelangelo grammars directly in Unity's editor.",
+            "preview": "Michelangelo.png",
+            "links": [
+                {
+                    "url": "https://github.com/Haaxor1689/MichelangeloUnity",
+                    "title": "Source on Github"
+                },
+                {
+                    "url": "https://michelangelo.graphics/",
+                    "title": "Michelangelo home page"
+                }
+            ]
+        },
+        {
+            "type": "Games",
+            "name": "Metal Rain",
+            "start": "2018-12",
+            "end": "2019-01",
+            "role": "Designer and Programmer",
+            "description": "Space, year unknown. Intense space battle.  One of the ships received several hits and the human aboard was badly injured and forced to make an emergency landing on the close planet. Afterward, this person went to a cryosleep to increase the chances of survival. Your task, computer, is to take care of the ship, fix it using the robots and get the hell outta here!",
+            "preview": "MetalRain/1.png",
+            "images": [
+                {
+                    "url": "MetalRain/2.png",
+                    "title": "Units preview"
+                },
+                {
+                    "url": "MetalRain/3.png",
+                    "title": "Falling wreckage"
+                }
+            ],
+            "links": [
+                {
+                    "url": "https://haaxor1689.itch.io/metal-rain",
+                    "title": "Itch page"
+                }
+            ]
+        },
         {
             "type": "Programming",
             "name": "One life item browser",
@@ -201,7 +287,7 @@
             ],
             "links": [
                 {
-                    "url": "https://haaxor.itch.io/randolph",
+                    "url": "https://haaxor1689.itch.io/randolph",
                     "title": "Itch page"
                 }
             ]
@@ -275,7 +361,7 @@
             ],
             "links": [
                 {
-                    "url": "https://haaxor.itch.io/tetris",
+                    "url": "https://haaxor1689.itch.io/tetris",
                     "title": "Itch page"
                 },
                 {
