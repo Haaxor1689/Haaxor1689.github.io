@@ -4,29 +4,34 @@ import { Col, Card, CardImg, Row, Collapse } from 'reactstrap';
 import { IProject, ILink } from './../Model/IPortfolio'
 import DateRange from './DateRange';
 
-interface IProjectCardState {
+interface IProjectCardProps extends IProject {
     isOpen: boolean,
+    onCardToggle: (key: string | null) => void,
+}
+
+interface IProjectCardState {
     size: "auto" | "12",
 }
 
-export default class ProjectCard extends React.Component<IProject, IProjectCardState> {
+export default class ProjectCard extends React.Component<IProjectCardProps, IProjectCardState> {
     state: IProjectCardState = {
-        isOpen: false,
-        size: "auto",
+        size: this.props.isOpen ? "12" : "auto",
     }
 
-    private isOpen = (): boolean => this.state.isOpen || this.state.size === "12";
+    private isOpen = (): boolean => this.props.isOpen || this.state.size === "12";
 
-    private toggleNav = () => {
+    private toggleCard = () => {
+        this.props.onCardToggle(this.props.isOpen ? null : this.props.name);
+    }
+
+    private onExiting = () => {
         this.setState((prevState) => ({
             ...prevState,
-            isOpen: !prevState.isOpen,
-            size: !prevState.isOpen ? "12" : prevState.size,
+            size: "12",
         }));
     }
 
     private onExited = () => {
-        console.log('closed');
         this.setState((prevState) => ({
             ...prevState,
             size: "auto",
@@ -58,7 +63,7 @@ export default class ProjectCard extends React.Component<IProject, IProjectCardS
 
     render = (): JSX.Element => (
         <Col xs={this.state.size}>
-            <Card className={`project-card ${this.isOpen() && "project-card-open"}`} onClick={this.toggleNav}>
+            <Card className={`project-card ${this.isOpen() && "project-card-open"}`} onClick={this.toggleCard}>
                 <div className="project-card-preview-container">
                     <CardImg top src={this.getPreview()} alt="Card image cap" className="project-card-preview" />
                 </div>
@@ -69,7 +74,7 @@ export default class ProjectCard extends React.Component<IProject, IProjectCardS
                     </Col>
                 </Row>
             </Card>
-            <Collapse isOpen={this.state.isOpen} onExited={this.onExited}>
+            <Collapse isOpen={this.props.isOpen} onExiting={this.onExiting} onExited={this.onExited}>
                 <Row className="project-card-body">
                     <Col lg={ this.props.links ? "9" : "12"}>
                         <DateRange start={this.props.start} end={this.props.end} />

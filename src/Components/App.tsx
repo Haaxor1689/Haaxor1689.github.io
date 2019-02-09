@@ -23,13 +23,22 @@ interface ISectionGroups {
 interface IAppState {
     portfolio: IPortfolio;
     filteredProjects: ISectionGroups;
+    openedCard: string | null;
 }
 
 export default class App extends React.Component<{}, IAppState> {
     public state: IAppState = {
         portfolio: PortfolioJSON,
         filteredProjects: groupBy(sortBy(PortfolioJSON.projects, 'type'), 'type'),
+        openedCard: null,
     };
+
+    private onCardOpen = (key: string | null) => {
+        this.setState(prevState => ({
+            ...prevState,
+            openedCard: key,
+        }));
+    }
 
     private toAnchor = (name: string): string => name.replace(/ /g, '_').toLowerCase();
 
@@ -41,7 +50,7 @@ export default class App extends React.Component<{}, IAppState> {
     private renderSection = (type: string, projects: IProject[]): JSX.Element => (
         <Row className="section justify-content-center" noGutters>
             <SectionTitle title={type} id={this.toAnchor(type)} />
-            { projects.map((project) => <ProjectCard { ...project } />)}
+            { projects.map((project) => <ProjectCard { ...project } isOpen={project.name == this.state.openedCard} onCardToggle={this.onCardOpen} />)}
         </Row>
     );
 
