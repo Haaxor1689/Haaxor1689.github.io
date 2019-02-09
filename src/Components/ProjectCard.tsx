@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Card, CardImg, Row, Collapse } from 'reactstrap';
+import { Col, Card, CardImg, Row, Collapse, UncontrolledCarousel } from 'reactstrap';
 
 import { IProject, ILink } from './../Model/IPortfolio'
 import DateRange from './DateRange';
@@ -24,40 +24,32 @@ export default class ProjectCard extends React.Component<IProjectCardProps, IPro
         this.props.onCardToggle(this.props.isOpen ? null : this.props.name);
     }
 
-    private onExiting = () => {
-        this.setState((prevState) => ({
-            ...prevState,
-            size: "12",
-        }));
-    }
+    private setSize = (size: "12" | "auto") => this.setState((prevState) => ({ ...prevState, size, }));
 
-    private onExited = () => {
-        this.setState((prevState) => ({
-            ...prevState,
-            size: "auto",
-        }));
+    private collapseEvents = {
+        onEntering: () => this.setSize("12"),
+        onExiting: () => this.setSize("12"),
+        onExited: () => this.setSize("auto"),
     }
 
     private urlPrefix = `${process.env.PUBLIC_URL}/Assets/Projects/`;
 
-    private getPreview = (): string => this.props.preview ? this.urlPrefix + this.props.preview : `${this.urlPrefix}Clock.png` 
-
-    private renderLink = (link: ILink): JSX.Element => <li><a href={link.url}>{link.title}</a></li>
+    private getPreview = (): string => this.props.preview ? this.urlPrefix + this.props.preview : `https://via.placeholder.com/100`
 
     private renderLinks = (): JSX.Element => (
         <Col lg="3">
             <strong>Links:</strong>
-            <ul>{this.props.links!.map(this.renderLink)}</ul>
+            <ul>{this.props.links!.map(link => <li><a href={link.url}>{link.title}</a></li>)}</ul>
         </Col>
     )
 
-    private renderImage = (link: ILink): JSX.Element => <Col><img src={this.urlPrefix + link.url} alt={link.title} title={link.title} className="project-card-image" /></Col>
-
     private renderImages = (): JSX.Element => (
         <Col className="w-100">
-            <Row className="justify-content-around">
-                {this.props.images!.map(this.renderImage)}
-            </Row>
+            <UncontrolledCarousel items={this.props.images!.map(image => ({
+                src: this.urlPrefix + image.url,
+                altText: image.title,
+                header: image.title,
+            }))} />
         </Col>
     )
 
@@ -74,7 +66,7 @@ export default class ProjectCard extends React.Component<IProjectCardProps, IPro
                     </Col>
                 </Row>
             </Card>
-            <Collapse isOpen={this.props.isOpen} onExiting={this.onExiting} onExited={this.onExited}>
+            <Collapse isOpen={this.props.isOpen} {...this.collapseEvents}>
                 <Row className="project-card-body">
                     <Col lg={ this.props.links ? "9" : "12"}>
                         <DateRange start={this.props.start} end={this.props.end} />
