@@ -61,7 +61,8 @@
 }
 
 .project-card-open {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 800px;
     width: unset;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -83,6 +84,11 @@
         @media screen and (max-width: map-get($grid-breakpoints, sm)) {
             font-size: 30px;
         }
+    }
+
+    & + .collapse, & + .collapsing {
+        margin: 0 auto;
+        max-width: 800px;
     }
 }
 
