@@ -71,7 +71,7 @@ export default class ProjectCard extends React.Component<IProjectCardProps, IPro
                     <Col lg={ this.props.links ? "9" : "12"}>
                         <DateRange start={this.props.start} end={this.props.end} />
                         <div><strong>My role:</strong> {this.props.role}</div>
-                        <div className="project-card-description">{this.props.description}</div>
+                        <div className="project-card-description" dangerouslySetInnerHTML={{ __html: this.props.description! }} />
                     </Col>
                     { this.props.links && this.renderLinks() }
                     { this.props.images && this.renderImages() }
