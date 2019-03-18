@@ -131,6 +131,10 @@
       "preview": "PiedFisherman/00.png",
       "images": [
         {
+          "url": "PiedFisherman/04.png",
+          "title": "Menu screen"
+        },
+        {
           "url": "PiedFisherman/01.png",
           "title": "Zombies getting out of canal"
         },
@@ -139,12 +143,8 @@
           "title": "Zombies leaving the city"
         },
         {
-          "url": "PiedFisherman/02.png",
+          "url": "PiedFisherman/03.png",
           "title": "Zombies trying to catch brain on the pole"
-        },
-        {
-          "url": "PiedFisherman/02.png",
-          "title": "Menu screen"
         }
       ],
       "links": [
