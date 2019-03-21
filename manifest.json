@@ -3,14 +3,14 @@
   "name": "Maros Betko's Portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "favicon.ico?v=2",
+      "sizes": "192x192 48x48 32x32 16x16",
       "type": "image/x-icon"
     }
   ],
-  "description": "My portfolio page hosted by Github Pages.",
+  "description": "I'm studying Informatics and Design on Masaryk University in Brno. Game development is one of my biggest passions. In my free time I try to develop my skills in this field, ranging from coding to art development. I have an ongoing game project that I like to develop and expand, and try new ideas on. I like challenges that require creative thinking and solving them inspires and motivates me. I'm thorough and organized and hate shoddy quality work and that is what I want my work to reflect.",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#3b3f3f",
   "background_color": "#ffffff"
 }
