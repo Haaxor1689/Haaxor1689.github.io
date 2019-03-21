@@ -55,7 +55,7 @@ export default class ProjectCard extends React.Component<IProjectCardProps, IPro
     private renderLinks = (): JSX.Element => (
         <Col lg="3">
             <strong>Links:</strong>
-            <ul>{this.props.links!.map(link => <li><a href={link.url} onClick={() => this.registerClick(link)}>{link.title}</a></li>)}</ul>
+            <ul>{this.props.links!.map((link, idx) => <li key={idx}><a href={link.url} onClick={() => this.registerClick(link)}>{link.title}</a></li>)}</ul>
         </Col>
     )
 
@@ -64,6 +64,7 @@ export default class ProjectCard extends React.Component<IProjectCardProps, IPro
             <UncontrolledCarousel items={this.props.images!.map(image => ({
                 src: this.urlPrefix + image.url,
                 altText: image.title,
+                caption: "",
                 header: image.title,
             }))} />
         </Col>

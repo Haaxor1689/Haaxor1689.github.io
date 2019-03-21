@@ -35,7 +35,7 @@ export default class Navigation extends React.Component<INavigationProps, { isOp
                     <Collapse isOpen={this.show(width)} className="nav-list">
                         <Nav vertical>
                             <div className="nav-sections">
-                            { this.props.sections.map((section) => <NavLink href={`#${section.anchor}`}>{section.name}</NavLink>)}
+                            { this.props.sections.map((section, idx) => <NavLink key={idx} href={`#${section.anchor}`}>{section.name}</NavLink>)}
                             </div>
                             <NavLink href="#biography">Biography</NavLink>
                             <NavLink href="#contact">Contact</NavLink>

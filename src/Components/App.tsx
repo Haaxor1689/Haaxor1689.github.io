@@ -54,10 +54,10 @@ export default class App extends React.Component<{}, IAppState> {
         anchor: this.toAnchor(type),
     }));
 
-    private renderSection = (type: string, projects: IProject[]): JSX.Element => (
-        <Row className="section justify-content-center" noGutters>
+    private renderSection = (type: string, projects: IProject[], idx: number): JSX.Element => (
+        <Row key={idx} className="section justify-content-center" noGutters>
             <SectionTitle title={type} id={this.toAnchor(type)} />
-            { projects.map((project) => <ProjectCard { ...project } isOpen={project.name == this.state.openedCard} onCardToggle={this.onCardOpen} />)}
+            { projects.map((project, idx) => <ProjectCard key={idx} { ...project } isOpen={project.name == this.state.openedCard} onCardToggle={this.onCardOpen} />)}
         </Row>
     );
 
@@ -68,7 +68,7 @@ export default class App extends React.Component<{}, IAppState> {
             </Col>
             <Col md>
                 <main>
-                    { Object.entries(this.state.filteredProjects).map((entry) => this.renderSection(entry[0], entry[1])) }
+                    { Object.entries(this.state.filteredProjects).map((entry, idx) => this.renderSection(entry[0], entry[1], idx)) }
                     <Row className="section">
                         <SectionTitle title="Biography" id="biography" />
                         <Biography {...this.state.portfolio.biography} />
@@ -76,16 +76,16 @@ export default class App extends React.Component<{}, IAppState> {
                     <Row>
                         <Col lg="6" className="section">
                             <SectionTitle title="Experience"/>
-                            {this.state.portfolio.experience.map((ex) => <Experience {...ex} />)}
+                            {this.state.portfolio.experience.map((ex, idx) => <Experience key={idx} {...ex} />)}
                         </Col>
                         <Col lg="6" className="section">
                             <SectionTitle title="Education"/>
-                            {this.state.portfolio.education.map((ed) => <Education {...ed} />)}
+                            {this.state.portfolio.education.map((ed, idx) => <Education key={idx} {...ed} />)}
                         </Col>
                     </Row>
                     <Row>
                         <SectionTitle title="Skills"/>
-                        {this.state.portfolio.skills.map((skill) => <Skill {...skill} />)}
+                        {this.state.portfolio.skills.map((skill, idx) => <Skill key={idx} {...skill} />)}
                     </Row>
                     <Row>
                         <SectionTitle title="Contact" id="contact" />
