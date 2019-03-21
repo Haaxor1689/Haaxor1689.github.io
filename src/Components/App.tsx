@@ -1,5 +1,6 @@
 import React from 'react';
-import { Row, Col, Button, } from 'reactstrap';
+import { Row, Col, } from 'reactstrap';
+import ReactGA from 'react-ga';
 
 import groupBy from 'lodash.groupby';
 import sortBy from 'lodash.sortby';
@@ -32,6 +33,12 @@ export default class App extends React.Component<{}, IAppState> {
         filteredProjects: groupBy(sortBy(PortfolioJSON.projects, 'type'), 'type'),
         openedCard: null,
     };
+
+    constructor(props: {}) {
+        super(props);
+        ReactGA.initialize("UA-136681354-1");
+        ReactGA.pageview("/");
+    }
 
     private onCardOpen = (key: string | null) => {
         this.setState(prevState => ({

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Card, CardImg, Row, Collapse, UncontrolledCarousel } from 'reactstrap';
+import ReactGA from 'react-ga';
 
 import { IProject, ILink } from './../Model/IPortfolio'
 import DateRange from './DateRange';
@@ -20,7 +21,22 @@ export default class ProjectCard extends React.Component<IProjectCardProps, IPro
 
     private isOpen = (): boolean => this.props.isOpen || this.state.size === "12";
 
+    private registerClick = (link: ILink) => {
+        ReactGA.event({
+            category: "Projects",
+            action: "Clicked card link",
+            label: `${this.props.name} - ${link.title}`,
+        })
+    }
+
     private toggleCard = () => {
+        if (!this.props.isOpen) {
+            ReactGA.event({
+                category: "Projects",
+                action: "Opened card",
+                label: this.props.name,
+            })
+        }
         this.props.onCardToggle(this.props.isOpen ? null : this.props.name);
     }
 
@@ -39,7 +55,7 @@ export default class ProjectCard extends React.Component<IProjectCardProps, IPro
     private renderLinks = (): JSX.Element => (
         <Col lg="3">
             <strong>Links:</strong>
-            <ul>{this.props.links!.map(link => <li><a href={link.url}>{link.title}</a></li>)}</ul>
+            <ul>{this.props.links!.map(link => <li><a href={link.url} onClick={() => this.registerClick(link)}>{link.title}</a></li>)}</ul>
         </Col>
     )
 
