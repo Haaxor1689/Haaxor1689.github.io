@@ -1,13 +1,24 @@
+import { ThemeProvider } from 'emotion-theming';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import './index.scss';
-import App from './Components/App';
+import 'sanitize.css';
+import { theme } from 'Theme';
+import GlobalStyles from 'Theme/GlobalStyles';
+
+import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'Fonts/PixelMonasteryScript.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+	<ThemeProvider theme={theme}>
+		<GlobalStyles />
+		<Router>
+			<App />
+		</Router>
+	</ThemeProvider>,
+	document.getElementById('root'),
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
