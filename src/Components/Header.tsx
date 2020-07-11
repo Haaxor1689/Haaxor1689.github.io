@@ -13,7 +13,7 @@ import Divider from './Divider';
 import SocialLinks from './SocialLinks';
 
 const Header: FC = () => {
-	const { isScrolledToTop, scroll } = useHeaderSize();
+	const { isScrolledToTop } = useHeaderSize();
 
 	return (
 		<Box
@@ -21,9 +21,8 @@ const Header: FC = () => {
 			as="header"
 			width="100%"
 			bg="dark"
-			position="fixed"
+			position={isScrolledToTop ? 'relative' : 'fixed'}
 			top={0}
-			mt={isScrolledToTop ? -scroll : undefined}
 		>
 			<Flex
 				mx="auto"

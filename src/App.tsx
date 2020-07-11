@@ -12,7 +12,7 @@ import { Theme } from 'Theme';
 import useHeaderSize from 'Hooks/useHeaderSize';
 
 const App: React.FC = () => {
-	const { height } = useHeaderSize();
+	const { isScrolledToTop, height } = useHeaderSize();
 
 	return (
 		<Flex as="main" flexDirection="column" minHeight="100vh">
@@ -22,7 +22,7 @@ const App: React.FC = () => {
 				flexGrow={1}
 				py={3}
 				width="100%"
-				mt={height}
+				mt={isScrolledToTop ? 0 : height}
 				mx="auto"
 				css={(theme: Theme) => css`
 					max-width: ${theme.constants.bodyWidth};

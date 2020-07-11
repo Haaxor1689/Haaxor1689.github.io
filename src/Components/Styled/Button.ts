@@ -13,44 +13,43 @@ type Props = FlexProps & {
 };
 
 export const Button = styled(Flex)<Props>`
-align-items: center;
-justify-content: center;
-font-size: 16px;
-appearance: none;
-border: none;
-border-radius: 27.5px;
-background: none;
-text-decoration: none;
-cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	appearance: none;
+	border: none;
+	background: none;
+	text-decoration: none;
+	cursor: pointer;
 
-/* Filled variant */
-${p =>
-	p.variant === 'filled' &&
-	css`
-		background-color: ${p.theme.colors[p.color ?? 'primary']};
-		color: white;
-	`}
-
-/* Inline variant */
-${p =>
-	p.variant === 'inline' &&
-	css`
-		color: ${p.theme.colors[p.color ?? 'light']};
-		padding: 0;
-
-		&:hover {
-			text-decoration: underline;
-		}
-
-		${p.active &&
+	/* Filled variant */
+	${p =>
+		p.variant === 'filled' &&
 		css`
-			font-weight: bold;
+			background-color: ${p.theme.colors[p.color ?? 'primary']};
+			color: white;
 		`}
-		${p.disabled &&
+
+	/* Inline variant */
+	${p =>
+		p.variant === 'inline' &&
 		css`
-			color: ${p.theme.colors.light};
+			color: ${p.theme.colors[p.color ?? 'light']};
+			padding: 0;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+			${p.active &&
+			css`
+				font-weight: bold;
+			`}
+			${p.disabled &&
+			css`
+				color: ${p.theme.colors.light};
+			`}
 		`}
-	`}
 `.withComponent('button');
 
 Button.defaultProps = {
