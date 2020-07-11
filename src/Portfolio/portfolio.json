@@ -114,7 +114,7 @@
   "skills": [
     {
       "field": "Programming",
-      "description": "My two most preferred languages are C++ and C#. Profesionally I've been developing mostly in C# and TypeScript and previously also in Swift. I also have experience with Unity engine, which I use for development in school and hobby projects."
+      "description": "Profesionally I've been developing mostly in C# and TypeScript and previously also in C++ and Swift. I also have experience with Unity engine, which I used for development in school and hobby projects."
     },
     {
       "field": "Graphics Design",
@@ -122,7 +122,7 @@
     },
     {
       "field": "Versioning and Collaboration",
-      "description": "I use Git daily and also have experience with various git workflows I used either in work or in group projects at school. I also used TFS (but I would rather not any more)."
+      "description": "I use Git daily and also have experience with various git workflows I used either in work or in group projects at school. I also worked on projects with teams varying from few to dozen people."
     }
   ],
   "projects": [
