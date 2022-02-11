@@ -23,6 +23,7 @@ const Header: FC = () => {
 			bg="dark"
 			position={isScrolledToTop ? 'relative' : 'fixed'}
 			top={0}
+			zIndex={999}
 		>
 			<Flex
 				mx="auto"
